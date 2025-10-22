@@ -1,0 +1,64 @@
+|Ula_pjct
+S[0] <= FullAdder:inst01928374.Sfa
+S[1] <= FullAdder:inst1.Sfa
+S[2] <= FullAdder:inst2.Sfa
+S[3] <= FullAdder:inst3.Sfa
+S[4] <= FullAdder:inst18.Sfa
+A[0] => FullAdder:inst01928374.Afa
+A[1] => FullAdder:inst1.Afa
+A[2] => FullAdder:inst2.Afa
+A[3] => FullAdder:inst3.Afa
+A[4] => FullAdder:inst18.Afa
+SUB => inst9.IN0
+SUB => FullAdder:inst01928374.Cinfa
+SUB => inst10.IN0
+SUB => inst11.IN0
+SUB => inst12.IN0
+SUB => inst.IN0
+B[0] => inst9.IN1
+B[1] => inst10.IN1
+B[2] => inst11.IN1
+B[3] => inst12.IN1
+B[4] => inst.IN1
+
+
+|Ula_pjct|FullAdder:inst01928374
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Bfa => inst.IN1
+Cinfa => inst3.IN1
+Coutfa <= <GND>
+
+
+|Ula_pjct|FullAdder:inst1
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Bfa => inst.IN1
+Cinfa => inst3.IN1
+Coutfa <= <GND>
+
+
+|Ula_pjct|FullAdder:inst2
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Bfa => inst.IN1
+Cinfa => inst3.IN1
+Coutfa <= <GND>
+
+
+|Ula_pjct|FullAdder:inst3
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Bfa => inst.IN1
+Cinfa => inst3.IN1
+Coutfa <= <GND>
+
+
+|Ula_pjct|FullAdder:inst18
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Bfa => inst.IN1
+Cinfa => inst3.IN1
+Coutfa <= <GND>
+
+
