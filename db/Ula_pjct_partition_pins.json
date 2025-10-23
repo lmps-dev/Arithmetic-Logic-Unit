@@ -24,7 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "B[4]",
 					"strict" : false
 				},
 				{
@@ -32,7 +32,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{
@@ -44,23 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
 					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
-					"strict" : false
-				},
-				{
 					"name" : "B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A[0]",
 					"strict" : false
 				},
 				{

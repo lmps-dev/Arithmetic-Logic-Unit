@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Ula_pjct
-Wed Oct 22 15:20:58 2025
+Thu Oct 23 09:56:41 2025
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Oct 22 15:20:58 2025 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 23 09:56:41 2025 ;
 ; Revision Name             ; Ula_pjct                              ;
-; Top-level Entity Name     ; Ula_pjct                              ;
+; Top-level Entity Name     ; summer_subtractor                     ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+-----------------------------+
 
 
-+--------------------------------------------------------------------------+
-; Simulation Generated Files                                               ;
-+--------------------------------------------------------------------------+
-; Generated Files                                                          ;
-+--------------------------------------------------------------------------+
-; D:/Users/TEMP.CIN.007/Documents/Project_ULA/simulation/qsim//Ula_pjct.vo ;
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Simulation Generated Files                                                        ;
++-----------------------------------------------------------------------------------+
+; Generated Files                                                                   ;
++-----------------------------------------------------------------------------------+
+; D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim//Ula_pjct.vo ;
++-----------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Oct 22 15:20:55 2025
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Users/TEMP.CIN.007/Documents/Project_ULA/simulation/qsim/ Ula_pjct -c Ula_pjct
+    Info: Processing started: Thu Oct 23 09:56:37 2025
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/ Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Ula_pjct.vo in folder "D:/Users/TEMP.CIN.007/Documents/Project_ULA/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Ula_pjct.vo in folder "D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4657 megabytes
-    Info: Processing ended: Wed Oct 22 15:20:58 2025
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4651 megabytes
+    Info: Processing ended: Thu Oct 23 09:56:41 2025
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:00
 
 

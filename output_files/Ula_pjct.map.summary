@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Oct 22 15:14:59 2025
+Analysis & Synthesis Status : Successful - Thu Oct 23 09:56:11 2025
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : Ula_pjct
-Top-level Entity Name : Ula_pjct
+Top-level Entity Name : summer_subtractor
 Family : Cyclone IV E
-Total logic elements : 5
-    Total combinational functions : 5
+Total logic elements : 27
+    Total combinational functions : 27
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 16
