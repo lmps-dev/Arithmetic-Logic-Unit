@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 640 824 656 992)
+	(rect 640 832 656 1000)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[2]" (rect 0 109 17 129)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 656 824 672 992)
+	(rect 656 856 672 1024)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[3]" (rect 0 109 17 129)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -106,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 672 824 688 992)
+	(rect 672 888 688 1056)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[4]" (rect 0 114 17 134)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -142,7 +142,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 488 824 504 992)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "A[1]" (rect 0 114 17 134)(font "Intel Clear" )(vertical))
+	(text "A[1]" (rect 1 113 18 133)(font "Intel Clear" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -1322,6 +1322,22 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 376 664)
 	(pt 504 664)
+)
+(connector
+	(pt 648 824)
+	(pt 648 832)
+)
+(connector
+	(pt 680 824)
+	(pt 680 888)
+)
+(connector
+	(pt 664 824)
+	(pt 664 856)
+)
+(connector
+	(pt 944 248)
+	(pt 944 256)
 )
 (junction (pt 328 664))
 (junction (pt 504 664))
