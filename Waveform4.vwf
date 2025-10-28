@@ -1,12 +1,12 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/Waveform3.vwf" --testbench_file="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/Waveform3.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/Waveform3.vwf" --testbench_file="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/Waveform3.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/" Ula_pjct -c Ula_pjct</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/" Ula_pjct -c Ula_pjct</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/vssb/Desktop/Arithmetic-Logic-Unit/Waveform4.vwf" --testbench_file="D:/Users/vssb/Desktop/Arithmetic-Logic-Unit/simulation/qsim/Waveform4.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/vssb/Desktop/Arithmetic-Logic-Unit/Waveform4.vwf" --testbench_file="D:/Users/vssb/Desktop/Arithmetic-Logic-Unit/simulation/qsim/Waveform4.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/vssb/Desktop/Arithmetic-Logic-Unit/simulation/qsim/" Ula_pjct -c Ula_pjct</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Users/vssb/Desktop/Arithmetic-Logic-Unit/simulation/qsim/" Ula_pjct -c Ula_pjct</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work Ula_pjct.vo
-vlog -work work Waveform3.vwf.vt
+vlog -work work Waveform4.vwf.vt
 vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.summer_subtractor_vlg_vec_tst
 vcd file -direction Ula_pjct.msim.vcd
 vcd add -internal summer_subtractor_vlg_vec_tst/*
@@ -20,12 +20,11 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work Ula_pjct.vo
-vlog -work work Waveform3.vwf.vt
+vlog -work work Waveform4.vwf.vt
 vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.summer_subtractor_vlg_vec_tst
 vcd file -direction Ula_pjct.msim.vcd
 vcd add -internal summer_subtractor_vlg_vec_tst/*
@@ -39,7 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -468,20 +466,11 @@ TRANSITION_LIST("SUB")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 100;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
 		}
 	}
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "SUB";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 0;
-	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
@@ -489,9 +478,9 @@ DISPLAY_LINE
 	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 1;
+	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-	CHILDREN = 2, 3, 4, 5, 6;
+	CHILDREN = 1, 2, 3, 4, 5;
 }
 
 DISPLAY_LINE
@@ -499,9 +488,9 @@ DISPLAY_LINE
 	CHANNEL = "A[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 2;
+	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -509,9 +498,9 @@ DISPLAY_LINE
 	CHANNEL = "A[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 3;
+	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -519,9 +508,9 @@ DISPLAY_LINE
 	CHANNEL = "A[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 4;
+	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -529,9 +518,9 @@ DISPLAY_LINE
 	CHANNEL = "A[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 5;
+	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -539,9 +528,9 @@ DISPLAY_LINE
 	CHANNEL = "A[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 6;
+	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -549,9 +538,9 @@ DISPLAY_LINE
 	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 7;
+	TREE_INDEX = 6;
 	TREE_LEVEL = 0;
-	CHILDREN = 8, 9, 10, 11, 12;
+	CHILDREN = 7, 8, 9, 10, 11;
 }
 
 DISPLAY_LINE
@@ -559,9 +548,9 @@ DISPLAY_LINE
 	CHANNEL = "B[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 8;
+	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -569,9 +558,9 @@ DISPLAY_LINE
 	CHANNEL = "B[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 9;
+	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -579,9 +568,9 @@ DISPLAY_LINE
 	CHANNEL = "B[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 10;
+	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -589,9 +578,9 @@ DISPLAY_LINE
 	CHANNEL = "B[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 11;
+	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -599,9 +588,9 @@ DISPLAY_LINE
 	CHANNEL = "B[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 12;
+	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -609,9 +598,9 @@ DISPLAY_LINE
 	CHANNEL = "S";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 13;
+	TREE_INDEX = 12;
 	TREE_LEVEL = 0;
-	CHILDREN = 14, 15, 16, 17, 18;
+	CHILDREN = 13, 14, 15, 16, 17;
 }
 
 DISPLAY_LINE
@@ -619,9 +608,9 @@ DISPLAY_LINE
 	CHANNEL = "S[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 14;
+	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 12;
 }
 
 DISPLAY_LINE
@@ -629,9 +618,9 @@ DISPLAY_LINE
 	CHANNEL = "S[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 15;
+	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 12;
 }
 
 DISPLAY_LINE
@@ -639,9 +628,9 @@ DISPLAY_LINE
 	CHANNEL = "S[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 16;
+	TREE_INDEX = 15;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 12;
 }
 
 DISPLAY_LINE
@@ -649,9 +638,9 @@ DISPLAY_LINE
 	CHANNEL = "S[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 17;
+	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 12;
 }
 
 DISPLAY_LINE
@@ -659,9 +648,18 @@ DISPLAY_LINE
 	CHANNEL = "S[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 18;
+	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 12;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SUB";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR
