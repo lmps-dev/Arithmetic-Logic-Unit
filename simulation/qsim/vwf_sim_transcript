@@ -1,19 +1,20 @@
 Determining the location of the ModelSim executable...
 
-Using: C:/InstallModelSim/modelsim_ase/win32aloem
+Using: C:/intelFPGA/18.1/modelsim_ase/win32aloem
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/Waveform3.vwf" --testbench_file="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/Waveform3.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="C:/Projects/Arithmetic-Logic-Unit/Waveform7.vwf" --testbench_file="C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform7.vwf.vt"
 
-Warning (292006): Can't contact license server "27000@cinlicense.cin.ufpe.br" -- this server will be ignored.
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Copyright (C) 2022  Intel Corporation. All rights reserved.
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Copyright (C) 2021  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -27,8 +28,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Oct 23 09:56:34 2025
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source=D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/Waveform3.vwf --testbench_file=D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/Waveform3.vwf.vt
+    Info: Processing started: Tue Oct 28 23:19:39 2025
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source=C:/Projects/Arithmetic-Logic-Unit/Waveform7.vwf --testbench_file=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform7.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -37,13 +38,14 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/" Ula_pjct -c Ula_pjct
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/" Ula_pjct -c Ula_pjct
 
-Warning (292006): Can't contact license server "27000@cinlicense.cin.ufpe.br" -- this server will be ignored.
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Copyright (C) 2022  Intel Corporation. All rights reserved.
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Copyright (C) 2021  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -57,41 +59,41 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Oct 23 09:56:37 2025
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/ Ula_pjct -c Ula_pjct
+    Info: Processing started: Tue Oct 28 23:19:40 2025
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/ Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Ula_pjct.vo in folder "D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Thu Oct 23 09:56:41 2025
-    Info: Elapsed time: 00:00:04
+Info (204019): Generated file Ula_pjct.vo in folder "C:/Projects/Arithmetic-Logic-Unit/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4659 megabytes
+    Info: Processing ended: Tue Oct 28 23:19:40 2025
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct.do generated.
+C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-C:/InstallModelSim/modelsim_ase/win32aloem/vsim -c -do Ula_pjct.do
+C:/intelFPGA/18.1/modelsim_ase/win32aloem/vsim -c -do Ula_pjct.do
 
-Reading pref.tcl
+Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 
-# 2020.1
+# 10.5b
 
 
 # do Ula_pjct.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 09:56:41 on Oct 23,2025
+# Start time: 23:19:40 on Oct 28,2025
 # vlog -work work Ula_pjct.vo 
 
 # -- Compiling module summer_subtractor
@@ -103,13 +105,14 @@ Reading pref.tcl
 # Top level modules:
 # 	summer_subtractor
 
-# End time: 09:56:41 on Oct 23,2025, Elapsed time: 0:00:00
+# End time: 23:19:40 on Oct 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 09:56:41 on Oct 23,2025
-# vlog -work work Waveform3.vwf.vt 
+# Start time: 23:19:40 on Oct 28,2025
+
+# vlog -work work Waveform7.vwf.vt 
 
 # -- Compiling module summer_subtractor_vlg_vec_tst
 
@@ -118,11 +121,11 @@ Reading pref.tcl
 # Top level modules:
 # 	summer_subtractor_vlg_vec_tst
 
-# End time: 09:56:41 on Oct 23,2025, Elapsed time: 0:00:00
+# End time: 23:19:40 on Oct 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.summer_subtractor_vlg_vec_tst 
-# Start time: 09:56:41 on Oct 23,2025
+# Start time: 23:19:40 on Oct 28,2025
 # Loading work.summer_subtractor_vlg_vec_tst
 # Loading work.summer_subtractor
 # Loading work.hard_block
@@ -132,23 +135,23 @@ Reading pref.tcl
 
 # after#26
 
-# ** Note: $finish    : Waveform3.vwf.vt(49)
+# ** Note: $finish    : Waveform7.vwf.vt(51)
 #    Time: 1 us  Iteration: 0  Instance: /summer_subtractor_vlg_vec_tst
 
-# End time: 09:56:42 on Oct 23,2025, Elapsed time: 0:00:01
+# End time: 23:19:41 on Oct 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/Waveform3.vwf...
+Reading C:/Projects/Arithmetic-Logic-Unit/Waveform7.vwf...
 
-Reading D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct.msim.vcd...
+Reading C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Users/lmps3/Desktop/quartus/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251023095642.sim.vwf
+Writing the resulting VWF to C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251028231941.sim.vwf
 
 Finished VCD to VWF conversion.
 
