@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ula_pjct
-Wed Oct 29 01:24:42 2025
+Wed Oct 29 11:18:02 2025
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 29 01:24:42 2025       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 29 11:18:02 2025       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Ula_pjct                                    ;
-; Top-level Entity Name              ; BTwosComplement                             ;
+; Top-level Entity Name              ; SummerSubtractor                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5                                           ;
-;     Total combinational functions  ; 5                                           ;
+; Total logic elements               ; 31                                          ;
+;     Total combinational functions  ; 31                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 10                                          ;
+; Total pins                         ; 18                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; BTwosComplement    ; Ula_pjct           ;
+; Top-level entity name                                            ; SummerSubtractor   ; Ula_pjct           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,14 +161,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
-; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/FullAdder.bdf       ;         ;
-; BTwosComplement.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BTwosComplement.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
+; SummerSubtractor.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/SummerSubtractor.bdf    ;         ;
+; TwosComplement6Bits.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/TwosComplement6Bits.bdf ;         ;
+; TwosComplement5Bits.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/TwosComplement5Bits.bdf ;         ;
+; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/FullAdder.bdf           ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -176,44 +178,55 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 5          ;
+; Estimated Total logic elements              ; 31         ;
 ;                                             ;            ;
-; Total combinational functions               ; 5          ;
+; Total combinational functions               ; 31         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 2          ;
-;     -- 3 input functions                    ; 1          ;
-;     -- <=2 input functions                  ; 2          ;
+;     -- 4 input functions                    ; 21         ;
+;     -- 3 input functions                    ; 6          ;
+;     -- <=2 input functions                  ; 4          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 5          ;
+;     -- normal mode                          ; 31         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 10         ;
+; I/O pins                                    ; 18         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; B[0]~input ;
-; Maximum fan-out                             ; 5          ;
-; Total fan-out                               ; 30         ;
-; Average fan-out                             ; 1.20       ;
+; Maximum fan-out node                        ; A[0]~input ;
+; Maximum fan-out                             ; 9          ;
+; Total fan-out                               ; 134        ;
+; Average fan-out                             ; 2.00       ;
 +---------------------------------------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-----------------+--------------+
-; |BTwosComplement           ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |BTwosComplement                 ; BTwosComplement ; work         ;
-;    |FullAdder:inst5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst5 ; FullAdder       ; work         ;
-;    |FullAdder:inst6|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst6 ; FullAdder       ; work         ;
-;    |FullAdder:inst7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst7 ; FullAdder       ; work         ;
-;    |FullAdder:inst8|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst8 ; FullAdder       ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                            ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name         ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+---------------------+--------------+
+; |SummerSubtractor               ; 31 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |SummerSubtractor                                            ; SummerSubtractor    ; work         ;
+;    |FullAdder:inst01928374|     ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|FullAdder:inst01928374                     ; FullAdder           ; work         ;
+;    |FullAdder:inst14|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|FullAdder:inst14                           ; FullAdder           ; work         ;
+;    |FullAdder:inst1|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|FullAdder:inst1                            ; FullAdder           ; work         ;
+;    |FullAdder:inst2|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|FullAdder:inst2                            ; FullAdder           ; work         ;
+;    |FullAdder:inst3|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|FullAdder:inst3                            ; FullAdder           ; work         ;
+;    |TwosComplement5Bits:inst19| ; 6 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement5Bits:inst19                 ; TwosComplement5Bits ; work         ;
+;       |FullAdder:inst6|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement5Bits:inst19|FullAdder:inst6 ; FullAdder           ; work         ;
+;       |FullAdder:inst7|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement5Bits:inst19|FullAdder:inst7 ; FullAdder           ; work         ;
+;    |TwosComplement5Bits:inst20| ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement5Bits:inst20                 ; TwosComplement5Bits ; work         ;
+;       |FullAdder:inst7|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement5Bits:inst20|FullAdder:inst7 ; FullAdder           ; work         ;
+;    |TwosComplement6Bits:inst18| ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement6Bits:inst18                 ; TwosComplement6Bits ; work         ;
+;       |FullAdder:inst6|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement6Bits:inst18|FullAdder:inst6 ; FullAdder           ; work         ;
+;       |FullAdder:inst7|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement6Bits:inst18|FullAdder:inst7 ; FullAdder           ; work         ;
+;       |FullAdder:inst8|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement6Bits:inst18|FullAdder:inst8 ; FullAdder           ; work         ;
+;       |FullAdder:inst9|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SummerSubtractor|TwosComplement6Bits:inst18|FullAdder:inst9 ; FullAdder           ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -237,15 +250,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 10                          ;
-; cycloneiii_lcell_comb ; 5                           ;
-;     normal            ; 5                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
+; boundary_port         ; 18                          ;
+; cycloneiii_lcell_comb ; 33                          ;
+;     normal            ; 33                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 21                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.60                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 5.53                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +278,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Oct 29 01:24:38 2025
+    Info: Processing started: Wed Oct 29 11:17:55 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -286,19 +300,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file fulladd
     Info (12023): Found entity 1: FullAdder
 Info (12021): Found 1 design units, including 1 entities, in source file btwoscomplement.bdf
     Info (12023): Found entity 1: BTwosComplement
-Info (12127): Elaborating entity "BTwosComplement" for the top level hierarchy
-Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdder:inst5"
+Info (12127): Elaborating entity "SummerSubtractor" for the top level hierarchy
+Warning (275011): Block or symbol "TwosComplement6Bits" of instance "inst18" overlaps another block or symbol
+Info (12128): Elaborating entity "TwosComplement6Bits" for hierarchy "TwosComplement6Bits:inst18"
+Info (12128): Elaborating entity "FullAdder" for hierarchy "TwosComplement6Bits:inst18|FullAdder:inst8"
+Info (12128): Elaborating entity "TwosComplement5Bits" for hierarchy "TwosComplement5Bits:inst20"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 31 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Wed Oct 29 01:24:42 2025
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Processing ended: Wed Oct 29 11:18:02 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
 
 

@@ -28,7 +28,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Oct 29 01:18:19 2025
+    Info: Processing started: Wed Oct 29 11:11:50 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source=C:/Projects/Arithmetic-Logic-Unit/Waveform3.vwf --testbench_file=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform3.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -59,13 +59,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Oct 29 01:18:20 2025
+    Info: Processing started: Wed Oct 29 11:11:50 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/ Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Ula_pjct.vo in folder "C:/Projects/Arithmetic-Logic-Unit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4659 megabytes
-    Info: Processing ended: Wed Oct 29 01:18:20 2025
+    Info: Processing ended: Wed Oct 29 11:11:50 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
@@ -93,41 +93,42 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 01:18:20 on Oct 29,2025
+# Start time: 11:11:51 on Oct 29,2025
 # vlog -work work Ula_pjct.vo 
 
-# -- Compiling module BTwosComplement
+# -- Compiling module SummerSubtractor
 
 # -- Compiling module hard_block
 
 # 
 
 # Top level modules:
-# 	BTwosComplement
+# 	SummerSubtractor
 
-# End time: 01:18:20 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 11:11:51 on Oct 29,2025, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 01:18:20 on Oct 29,2025
+# Start time: 11:11:51 on Oct 29,2025
 # vlog -work work Waveform3.vwf.vt 
 
-# -- Compiling module BTwosComplement_vlg_vec_tst
+# -- Compiling module SummerSubtractor_vlg_vec_tst
 
 # 
 
 # Top level modules:
-# 	BTwosComplement_vlg_vec_tst
+# 	SummerSubtractor_vlg_vec_tst
 
-# End time: 01:18:20 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 11:11:51 on Oct 29,2025, Elapsed time: 0:00:00
+
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.BTwosComplement_vlg_vec_tst 
-# Start time: 01:18:20 on Oct 29,2025
-# Loading work.BTwosComplement_vlg_vec_tst
-# Loading work.BTwosComplement
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.SummerSubtractor_vlg_vec_tst 
+# Start time: 11:11:51 on Oct 29,2025
+# Loading work.SummerSubtractor_vlg_vec_tst
+# Loading work.SummerSubtractor
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
@@ -135,10 +136,10 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # after#26
 
-# ** Note: $finish    : Waveform3.vwf.vt(45)
-#    Time: 1 us  Iteration: 0  Instance: /BTwosComplement_vlg_vec_tst
+# ** Note: $finish    : Waveform3.vwf.vt(51)
+#    Time: 1 us  Iteration: 0  Instance: /SummerSubtractor_vlg_vec_tst
 
-# End time: 01:18:21 on Oct 29,2025, Elapsed time: 0:00:01
+# End time: 11:11:51 on Oct 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -151,7 +152,7 @@ Reading C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251029011821.sim.vwf
+Writing the resulting VWF to C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251029111151.sim.vwf
 
 Finished VCD to VWF conversion.
 
