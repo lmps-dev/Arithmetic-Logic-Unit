@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ula_pjct
-Tue Oct 28 23:25:49 2025
+Wed Oct 29 01:24:42 2025
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 28 23:25:49 2025       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 29 01:24:42 2025       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Ula_pjct                                    ;
-; Top-level Entity Name              ; summer_subtractor                           ;
+; Top-level Entity Name              ; BTwosComplement                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 27                                          ;
-;     Total combinational functions  ; 27                                          ;
+; Total logic elements               ; 5                                           ;
+;     Total combinational functions  ; 5                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 18                                          ;
+; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; summer_subtractor  ; Ula_pjct           ;
+; Top-level entity name                                            ; BTwosComplement    ; Ula_pjct           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,16 +161,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
-; summer_subtractor.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/summer_subtractor.bdf      ;         ;
-; twosComplement.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/twosComplement.bdf         ;         ;
-; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/FullAdder.bdf              ;         ;
-; twosComplementespecial.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/twosComplementespecial.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/FullAdder.bdf       ;         ;
+; BTwosComplement.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BTwosComplement.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -178,53 +176,44 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 27         ;
+; Estimated Total logic elements              ; 5          ;
 ;                                             ;            ;
-; Total combinational functions               ; 27         ;
+; Total combinational functions               ; 5          ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 17         ;
-;     -- 3 input functions                    ; 6          ;
-;     -- <=2 input functions                  ; 4          ;
+;     -- 4 input functions                    ; 2          ;
+;     -- 3 input functions                    ; 1          ;
+;     -- <=2 input functions                  ; 2          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 27         ;
+;     -- normal mode                          ; 5          ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 18         ;
+; I/O pins                                    ; 10         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; A[4]~input ;
-; Maximum fan-out                             ; 8          ;
-; Total fan-out                               ; 118        ;
-; Average fan-out                             ; 1.87       ;
+; Maximum fan-out node                        ; B[0]~input ;
+; Maximum fan-out                             ; 5          ;
+; Total fan-out                               ; 30         ;
+; Average fan-out                             ; 1.20       ;
 +---------------------------------------------+------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
-; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name            ; Library Name ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
-; |summer_subtractor                ; 27 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |summer_subtractor                                              ; summer_subtractor      ; work         ;
-;    |FullAdder:inst01928374|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|FullAdder:inst01928374                       ; FullAdder              ; work         ;
-;    |FullAdder:inst1|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|FullAdder:inst1                              ; FullAdder              ; work         ;
-;    |FullAdder:inst2|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|FullAdder:inst2                              ; FullAdder              ; work         ;
-;    |FullAdder:inst3|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|FullAdder:inst3                              ; FullAdder              ; work         ;
-;    |twosComplement:inst4|         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplement:inst4                         ; twosComplement         ; work         ;
-;       |FullAdder:inst6|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplement:inst4|FullAdder:inst6         ; FullAdder              ; work         ;
-;    |twosComplement:inst6|         ; 3 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplement:inst6                         ; twosComplement         ; work         ;
-;       |FullAdder:inst6|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplement:inst6|FullAdder:inst6         ; FullAdder              ; work         ;
-;    |twosComplementespecial:inst5| ; 11 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplementespecial:inst5                 ; twosComplementespecial ; work         ;
-;       |FullAdder:inst6|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplementespecial:inst5|FullAdder:inst6 ; FullAdder              ; work         ;
-;       |FullAdder:inst7|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplementespecial:inst5|FullAdder:inst7 ; FullAdder              ; work         ;
-;       |FullAdder:inst8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplementespecial:inst5|FullAdder:inst8 ; FullAdder              ; work         ;
-;       |FullAdder:inst9|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |summer_subtractor|twosComplementespecial:inst5|FullAdder:inst9 ; FullAdder              ; work         ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-----------------+--------------+
+; |BTwosComplement           ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |BTwosComplement                 ; BTwosComplement ; work         ;
+;    |FullAdder:inst5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst5 ; FullAdder       ; work         ;
+;    |FullAdder:inst6|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst6 ; FullAdder       ; work         ;
+;    |FullAdder:inst7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst7 ; FullAdder       ; work         ;
+;    |FullAdder:inst8|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BTwosComplement|FullAdder:inst8 ; FullAdder       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -248,16 +237,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
-; cycloneiii_lcell_comb ; 28                          ;
-;     normal            ; 28                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 17                          ;
+; boundary_port         ; 10                          ;
+; cycloneiii_lcell_comb ; 5                           ;
+;     normal            ; 5                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 5.15                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -276,37 +264,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Oct 28 23:25:43 2025
+    Info: Processing started: Wed Oct 29 01:24:38 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Warning (12018): Entity "XOR" will be ignored because it conflicts with Quartus Prime primitive name
+Info (12021): Found 1 design units, including 1 entities, in source file xor.bdf
+Warning (12018): Entity "AND" will be ignored because it conflicts with Quartus Prime primitive name
+Info (12021): Found 1 design units, including 1 entities, in source file and.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file selector.bdf
+    Info (12023): Found entity 1: Selector
+Info (12021): Found 1 design units, including 1 entities, in source file summersubtractor.bdf
+    Info (12023): Found entity 1: SummerSubtractor
+Info (12021): Found 1 design units, including 1 entities, in source file twoscomplement6bits.bdf
+    Info (12023): Found entity 1: TwosComplement6Bits
+Info (12021): Found 1 design units, including 1 entities, in source file twoscomplement5bits.bdf
+    Info (12023): Found entity 1: TwosComplement5Bits
 Info (12021): Found 1 design units, including 1 entities, in source file magnitudecomparator4bits.bdf
     Info (12023): Found entity 1: MagnitudeComparator4bits
-Info (12021): Found 1 design units, including 1 entities, in source file summer_subtractor.bdf
-    Info (12023): Found entity 1: summer_subtractor
-Info (12021): Found 1 design units, including 1 entities, in source file twoscomplement.bdf
-    Info (12023): Found entity 1: twosComplement
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder.bdf
     Info (12023): Found entity 1: FullAdder
-Info (12021): Found 1 design units, including 1 entities, in source file twoscomplementespecial.bdf
-    Info (12023): Found entity 1: twosComplementespecial
-Info (12021): Found 1 design units, including 1 entities, in source file seletor.bdf
-    Info (12023): Found entity 1: Seletor
-Info (12127): Elaborating entity "summer_subtractor" for the top level hierarchy
-Info (12128): Elaborating entity "twosComplementespecial" for hierarchy "twosComplementespecial:inst5"
-Info (12128): Elaborating entity "FullAdder" for hierarchy "twosComplementespecial:inst5|FullAdder:inst8"
-Info (12128): Elaborating entity "twosComplement" for hierarchy "twosComplement:inst4"
+Info (12021): Found 1 design units, including 1 entities, in source file btwoscomplement.bdf
+    Info (12023): Found entity 1: BTwosComplement
+Info (12127): Elaborating entity "BTwosComplement" for the top level hierarchy
+Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdder:inst5"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 27 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 5 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Tue Oct 28 23:25:49 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Wed Oct 29 01:24:42 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:10
 
 

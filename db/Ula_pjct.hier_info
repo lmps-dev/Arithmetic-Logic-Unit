@@ -1,53 +1,17 @@
-|summer_subtractor
-S[0] <= twosComplementespecial:inst5.S[0]
-S[1] <= twosComplementespecial:inst5.S[1]
-S[2] <= twosComplementespecial:inst5.S[2]
-S[3] <= twosComplementespecial:inst5.S[3]
-S[4] <= twosComplementespecial:inst5.S[4]
-S[5] <= twosComplementespecial:inst5.S[5]
-SUBTRACTOR => inst16.IN0
-SUBTRACTOR => inst17.IN1
-SUBTRACTOR => inst12.IN0
-SUBTRACTOR => inst11.IN0
-SUBTRACTOR => inst10.IN0
-SUBTRACTOR => inst9.IN0
-SUBTRACTOR => FullAdder:inst01928374.Cinfa
-B[0] => twosComplement:inst4.B[0]
-B[1] => twosComplement:inst4.B[1]
-B[2] => twosComplement:inst4.B[2]
-B[3] => twosComplement:inst4.B[3]
-B[4] => twosComplement:inst4.B[4]
-AgtB => inst.IN0
-AgtB => inst7.IN1
-A[0] => twosComplement:inst6.B[0]
-A[1] => twosComplement:inst6.B[1]
-A[2] => twosComplement:inst6.B[2]
-A[3] => twosComplement:inst6.B[3]
-A[4] => twosComplement:inst6.B[4]
-
-
-|summer_subtractor|twosComplementespecial:inst5
-S[0] <= FullAdder:inst5.Sfa
-S[1] <= FullAdder:inst6.Sfa
+|BTwosComplement
+S[0] <= FullAdder:inst9.Sfa
+S[1] <= FullAdder:inst8.Sfa
 S[2] <= FullAdder:inst7.Sfa
-S[3] <= FullAdder:inst8.Sfa
-S[4] <= FullAdder:inst9.Sfa
-S[5] <= B[5].DB_MAX_OUTPUT_PORT_TYPE
-B[0] => inst3.IN1
-B[1] => inst2.IN1
-B[2] => inst1.IN1
-B[3] => inst.IN1
-B[4] => inst10.IN1
-B[5] => inst.IN0
-B[5] => inst1.IN0
-B[5] => inst2.IN0
-B[5] => inst3.IN0
-B[5] => FullAdder:inst5.Cinfa
-B[5] => S[5].DATAIN
-B[5] => inst10.IN0
+S[3] <= FullAdder:inst6.Sfa
+S[4] <= FullAdder:inst5.Sfa
+B[0] => inst.IN0
+B[1] => inst1.IN0
+B[2] => inst2.IN0
+B[3] => inst3.IN0
+B[4] => inst4.IN0
 
 
-|summer_subtractor|twosComplementespecial:inst5|FullAdder:inst8
+|BTwosComplement|FullAdder:inst5
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -58,7 +22,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|summer_subtractor|twosComplementespecial:inst5|FullAdder:inst7
+|BTwosComplement|FullAdder:inst6
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -69,7 +33,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|summer_subtractor|twosComplementespecial:inst5|FullAdder:inst6
+|BTwosComplement|FullAdder:inst7
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -80,7 +44,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|summer_subtractor|twosComplementespecial:inst5|FullAdder:inst5
+|BTwosComplement|FullAdder:inst8
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -91,186 +55,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|summer_subtractor|twosComplementespecial:inst5|FullAdder:inst9
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst4
-S[0] <= FullAdder:inst5.Sfa
-S[1] <= FullAdder:inst6.Sfa
-S[2] <= FullAdder:inst7.Sfa
-S[3] <= FullAdder:inst8.Sfa
-S[4] <= B[4].DB_MAX_OUTPUT_PORT_TYPE
-B[0] => inst3.IN1
-B[1] => inst2.IN1
-B[2] => inst1.IN1
-B[3] => inst.IN1
-B[4] => inst.IN0
-B[4] => inst1.IN0
-B[4] => inst2.IN0
-B[4] => inst3.IN0
-B[4] => FullAdder:inst5.Cinfa
-B[4] => S[4].DATAIN
-
-
-|summer_subtractor|twosComplement:inst4|FullAdder:inst8
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst4|FullAdder:inst7
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst4|FullAdder:inst6
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst4|FullAdder:inst5
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst6
-S[0] <= FullAdder:inst5.Sfa
-S[1] <= FullAdder:inst6.Sfa
-S[2] <= FullAdder:inst7.Sfa
-S[3] <= FullAdder:inst8.Sfa
-S[4] <= B[4].DB_MAX_OUTPUT_PORT_TYPE
-B[0] => inst3.IN1
-B[1] => inst2.IN1
-B[2] => inst1.IN1
-B[3] => inst.IN1
-B[4] => inst.IN0
-B[4] => inst1.IN0
-B[4] => inst2.IN0
-B[4] => inst3.IN0
-B[4] => FullAdder:inst5.Cinfa
-B[4] => S[4].DATAIN
-
-
-|summer_subtractor|twosComplement:inst6|FullAdder:inst8
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst6|FullAdder:inst7
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst6|FullAdder:inst6
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|twosComplement:inst6|FullAdder:inst5
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|FullAdder:inst14
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|FullAdder:inst3
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|FullAdder:inst2
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|FullAdder:inst1
-Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Afa => inst.IN0
-Afa => inst5.IN1
-Bfa => inst.IN1
-Bfa => inst5.IN0
-Cinfa => inst3.IN1
-Cinfa => inst4.IN0
-Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|summer_subtractor|FullAdder:inst01928374
+|BTwosComplement|FullAdder:inst9
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1

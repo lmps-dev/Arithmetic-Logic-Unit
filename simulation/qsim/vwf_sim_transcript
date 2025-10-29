@@ -7,7 +7,7 @@ Note: if both Questa Intel FPGA Edition and ModelSim executables are available, 
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="C:/Projects/Arithmetic-Logic-Unit/Waveform7.vwf" --testbench_file="C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform7.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="C:/Projects/Arithmetic-Logic-Unit/Waveform3.vwf" --testbench_file="C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform3.vwf.vt"
 
 TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
 
@@ -28,8 +28,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Oct 28 23:19:39 2025
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source=C:/Projects/Arithmetic-Logic-Unit/Waveform7.vwf --testbench_file=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform7.vwf.vt
+    Info: Processing started: Wed Oct 29 01:18:19 2025
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source=C:/Projects/Arithmetic-Logic-Unit/Waveform3.vwf --testbench_file=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform3.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -59,13 +59,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Oct 28 23:19:40 2025
+    Info: Processing started: Wed Oct 29 01:18:20 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/ Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Ula_pjct.vo in folder "C:/Projects/Arithmetic-Logic-Unit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4659 megabytes
-    Info: Processing ended: Tue Oct 28 23:19:40 2025
+    Info: Processing ended: Wed Oct 29 01:18:20 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
@@ -93,41 +93,41 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 23:19:40 on Oct 28,2025
+# Start time: 01:18:20 on Oct 29,2025
 # vlog -work work Ula_pjct.vo 
 
-# -- Compiling module summer_subtractor
+# -- Compiling module BTwosComplement
 
 # -- Compiling module hard_block
 
 # 
 
 # Top level modules:
-# 	summer_subtractor
+# 	BTwosComplement
 
-# End time: 23:19:40 on Oct 28,2025, Elapsed time: 0:00:00
+# End time: 01:18:20 on Oct 29,2025, Elapsed time: 0:00:00
+
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 23:19:40 on Oct 28,2025
+# Start time: 01:18:20 on Oct 29,2025
+# vlog -work work Waveform3.vwf.vt 
 
-# vlog -work work Waveform7.vwf.vt 
-
-# -- Compiling module summer_subtractor_vlg_vec_tst
+# -- Compiling module BTwosComplement_vlg_vec_tst
 
 # 
 
 # Top level modules:
-# 	summer_subtractor_vlg_vec_tst
+# 	BTwosComplement_vlg_vec_tst
 
-# End time: 23:19:40 on Oct 28,2025, Elapsed time: 0:00:00
+# End time: 01:18:20 on Oct 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.summer_subtractor_vlg_vec_tst 
-# Start time: 23:19:40 on Oct 28,2025
-# Loading work.summer_subtractor_vlg_vec_tst
-# Loading work.summer_subtractor
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.BTwosComplement_vlg_vec_tst 
+# Start time: 01:18:20 on Oct 29,2025
+# Loading work.BTwosComplement_vlg_vec_tst
+# Loading work.BTwosComplement
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
@@ -135,23 +135,23 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # after#26
 
-# ** Note: $finish    : Waveform7.vwf.vt(51)
-#    Time: 1 us  Iteration: 0  Instance: /summer_subtractor_vlg_vec_tst
+# ** Note: $finish    : Waveform3.vwf.vt(45)
+#    Time: 1 us  Iteration: 0  Instance: /BTwosComplement_vlg_vec_tst
 
-# End time: 23:19:41 on Oct 28,2025, Elapsed time: 0:00:01
+# End time: 01:18:21 on Oct 29,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Projects/Arithmetic-Logic-Unit/Waveform7.vwf...
+Reading C:/Projects/Arithmetic-Logic-Unit/Waveform3.vwf...
 
 Reading C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251028231941.sim.vwf
+Writing the resulting VWF to C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251029011821.sim.vwf
 
 Finished VCD to VWF conversion.
 
