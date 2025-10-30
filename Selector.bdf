@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -153,7 +153,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 584 288 760 304)
+	(rect 584 280 760 296)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Sec[2]" (rect 90 0 119 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -766,14 +766,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 584 224)
 )
 (connector
-	(pt 528 288)
-	(pt 584 288)
-)
-(connector
-	(pt 584 288)
-	(pt 584 296)
-)
-(connector
 	(pt 464 216)
 	(pt 120 216)
 )
@@ -844,6 +836,10 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 120 80)
 	(pt 120 216)
+)
+(connector
+	(pt 528 288)
+	(pt 584 288)
 )
 (junction (pt 232 512))
 (junction (pt 336 512))

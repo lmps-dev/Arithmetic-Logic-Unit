@@ -1,4 +1,4 @@
-// Copyright (C) 2021  Intel Corporation. All rights reserved.
+// Copyright (C) 2022  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
@@ -19,98 +19,78 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/28/2025 22:41:39"
+// Generated on "10/30/2025 08:45:44"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          summer_subtractor
+// Verilog Test Bench (with test vectors) for design :                          bit4ToBCD
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module summer_subtractor_vlg_vec_tst();
+module bit4ToBCD_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [4:0] A;
-reg [4:0] B;
-reg COMPARATOR;
-reg SUBTRACTOR;
+reg [3:0] I;
 // wires                                               
-wire [5:0] S;
+wire a;
+wire b;
+wire c;
+wire d;
+wire e;
+wire f;
+wire g;
 
 // assign statements (if any)                          
-summer_subtractor i1 (
+bit4ToBCD i1 (
 // port map - connection between master ports and signals/registers   
-	.A(A),
-	.B(B),
-	.COMPARATOR(COMPARATOR),
-	.S(S),
-	.SUBTRACTOR(SUBTRACTOR)
+	.a(a),
+	.b(b),
+	.c(c),
+	.d(d),
+	.e(e),
+	.f(f),
+	.g(g),
+	.I(I)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// A[ 4 ]
+// I[ 3 ]
 initial
 begin
-	A[4] = 1'b0;
+	repeat(6)
+	begin
+		I[3] = 1'b0;
+		I[3] = #80000 1'b1;
+		# 80000;
+	end
+	I[3] = 1'b0;
 end 
-// A[ 3 ]
+// I[ 2 ]
 initial
 begin
-	A[3] = 1'b0;
+	repeat(12)
+	begin
+		I[2] = 1'b0;
+		I[2] = #40000 1'b1;
+		# 40000;
+	end
+	I[2] = 1'b0;
 end 
-// A[ 2 ]
-initial
+// I[ 1 ]
+always
 begin
-	A[2] = 1'b1;
+	I[1] = 1'b0;
+	I[1] = #20000 1'b1;
+	#20000;
 end 
-// A[ 1 ]
-initial
+// I[ 0 ]
+always
 begin
-	A[1] = 1'b0;
-end 
-// A[ 0 ]
-initial
-begin
-	A[0] = 1'b1;
-end 
-// B[ 4 ]
-initial
-begin
-	B[4] = 1'b1;
-end 
-// B[ 3 ]
-initial
-begin
-	B[3] = 1'b1;
-end 
-// B[ 2 ]
-initial
-begin
-	B[2] = 1'b0;
-end 
-// B[ 1 ]
-initial
-begin
-	B[1] = 1'b1;
-end 
-// B[ 0 ]
-initial
-begin
-	B[0] = 1'b0;
-end 
-
-// COMPARATOR
-initial
-begin
-	COMPARATOR = 1'b0;
-end 
-
-// SUBTRACTOR
-initial
-begin
-	SUBTRACTOR = 1'b0;
+	I[0] = 1'b0;
+	I[0] = #10000 1'b1;
+	#10000;
 end 
 endmodule
 
