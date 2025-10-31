@@ -22,9 +22,9 @@ on the Quartus Prime software download page.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 384 336 400 504)
+	(rect 400 360 416 536)
 	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
-	(text "I[0]" (rect 1 113 11 129)(font "Arial" )(vertical))
+	(text "pin_name1" (rect 0 114 10 167)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -39,9 +39,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(input)
-	(rect 504 336 520 504)
+	(rect 496 360 512 533)
 	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
-	(text "I[1]" (rect 1 113 13 128)(font "Intel Clear" )(vertical))
+	(text "pin_name2" (rect 0 114 12 167)(font "Intel Clear" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -56,9 +56,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(input)
-	(rect 632 336 648 504)
+	(rect 600 360 616 533)
 	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
-	(text "I[2]" (rect 2 112 14 127)(font "Intel Clear" )(vertical))
+	(text "pin_name3" (rect 0 114 12 167)(font "Intel Clear" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -73,9 +73,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(input)
-	(rect 736 336 752 504)
+	(rect 720 360 736 533)
 	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
-	(text "I[3]" (rect 2 112 14 127)(font "Intel Clear" )(vertical))
+	(text "pin_name4" (rect 0 114 12 167)(font "Intel Clear" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -90,9 +90,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(input)
-	(rect 824 336 840 504)
+	(rect 848 360 864 528)
 	(text "INPUT" (rect 0 15 9 43)(font "Arial" (font_size 6))(vertical))
-	(text "I[4]" (rect 1 113 11 129)(font "Arial" )(vertical))
+	(text "pin_name5" (rect 0 109 12 163)(font "Intel Clear" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -107,9 +107,9 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 984 -128 1160 -112)
+	(rect 1064 -472 1240 -456)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
-	(text "U[0]" (rect 90 0 111 10)(font "Arial" ))
+	(text "U[0]" (rect 90 0 110 12)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -122,9 +122,9 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 888 -184 984 -56)
+	(rect 968 -528 1064 -400)
 	(text "BCD_a_Segment" (rect 5 0 105 14)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 112 24 124)(font "Intel Clear" ))
+	(text "inst9" (rect 8 112 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -172,67 +172,67 @@ on the Quartus Prime software download page.
 	)
 )
 (connector
-	(pt 888 -152)
-	(pt 392 -152)
+	(pt 968 -496)
+	(pt 408 -496)
 )
 (connector
-	(pt 392 336)
-	(pt 392 -152)
+	(pt 408 -544)
+	(pt 408 -496)
 )
 (connector
-	(pt 392 -152)
-	(pt 392 -200)
+	(pt 968 -480)
+	(pt 504 -480)
 )
 (connector
-	(pt 888 -136)
-	(pt 512 -136)
+	(pt 504 -544)
+	(pt 504 -480)
 )
 (connector
-	(pt 512 336)
-	(pt 512 -136)
+	(pt 608 -544)
+	(pt 608 -464)
 )
 (connector
-	(pt 512 -136)
-	(pt 512 -208)
+	(pt 968 -448)
+	(pt 728 -448)
 )
 (connector
-	(pt 888 -120)
-	(pt 640 -120)
+	(pt 728 -544)
+	(pt 728 -448)
 )
 (connector
-	(pt 640 336)
-	(pt 640 -120)
+	(pt 968 -432)
+	(pt 856 -432)
 )
 (connector
-	(pt 640 -120)
-	(pt 640 -208)
+	(pt 856 -544)
+	(pt 856 -432)
 )
 (connector
-	(pt 888 -104)
-	(pt 744 -104)
+	(pt 608 -464)
+	(pt 968 -464)
 )
 (connector
-	(pt 744 336)
-	(pt 744 -104)
+	(pt 408 -496)
+	(pt 408 360)
 )
 (connector
-	(pt 744 -104)
-	(pt 744 -200)
+	(pt 504 -480)
+	(pt 504 360)
 )
 (connector
-	(pt 888 -88)
-	(pt 832 -88)
+	(pt 608 -464)
+	(pt 608 360)
 )
 (connector
-	(pt 832 336)
-	(pt 832 -88)
+	(pt 728 -448)
+	(pt 728 360)
 )
 (connector
-	(pt 832 -88)
-	(pt 832 -192)
+	(pt 856 -432)
+	(pt 856 360)
 )
-(junction (pt 392 -152))
-(junction (pt 512 -136))
-(junction (pt 640 -120))
-(junction (pt 744 -104))
-(junction (pt 832 -88))
+(junction (pt 408 -496))
+(junction (pt 504 -480))
+(junction (pt 608 -464))
+(junction (pt 728 -448))
+(junction (pt 856 -432))
