@@ -29,10 +29,13 @@ B[3] => LB[3].DATAIN
 B[4] => ALU:inst.B[4]
 B[4] => LB[4].DATAIN
 S[0] => ALU:inst.S[0]
+S[0] => ShouldBCDBeOff:inst28.S[0]
 S[0] => LS[0].DATAIN
 S[1] => ALU:inst.S[1]
+S[1] => ShouldBCDBeOff:inst28.S[1]
 S[1] => LS[1].DATAIN
 S[2] => ALU:inst.S[2]
+S[2] => ShouldBCDBeOff:inst28.S[2]
 S[2] => LS[2].DATAIN
 AD[0] <= BinaryToDecimalBCDConversor:inst99.D[0]
 AD[1] <= BinaryToDecimalBCDConversor:inst99.D[1]
@@ -68,20 +71,20 @@ F[2] <= ALU:inst.F[2]
 F[3] <= ALU:inst.F[3]
 F[4] <= ALU:inst.F[4]
 F[5] <= ALU:inst.F[5]
-FD[0] <= BinaryToDecimalBCDConversor:inst18.D[0]
-FD[1] <= BinaryToDecimalBCDConversor:inst18.D[1]
-FD[2] <= BinaryToDecimalBCDConversor:inst18.D[2]
-FD[3] <= BinaryToDecimalBCDConversor:inst18.D[3]
-FD[4] <= BinaryToDecimalBCDConversor:inst18.D[4]
-FD[5] <= BinaryToDecimalBCDConversor:inst18.D[5]
-FD[6] <= BinaryToDecimalBCDConversor:inst18.D[6]
-FU[0] <= BinaryToDecimalBCDConversor:inst18.U[0]
-FU[1] <= BinaryToDecimalBCDConversor:inst18.U[1]
-FU[2] <= BinaryToDecimalBCDConversor:inst18.U[2]
-FU[3] <= BinaryToDecimalBCDConversor:inst18.U[3]
-FU[4] <= BinaryToDecimalBCDConversor:inst18.U[4]
-FU[5] <= BinaryToDecimalBCDConversor:inst18.U[5]
-FU[6] <= BinaryToDecimalBCDConversor:inst18.U[6]
+FD[0] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+FD[1] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+FD[2] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+FD[3] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+FD[4] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+FD[5] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+FD[6] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+FU[0] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+FU[1] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+FU[2] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+FU[3] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+FU[4] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+FU[5] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+FU[6] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
 LA[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 LA[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 LA[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -99,50 +102,50 @@ LS[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
 
 |Central|ALU:inst
 STATUS <= inst37.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => MagnitudeComparator4bits:inst1.A[0]
+A[0] => MagnitudeComparator4bits:inst4.A[0]
 A[0] => BitToBitAND:inst12.A[0]
-A[0] => SummerSubtractor:inst5.A[0]
+A[0] => SummerSubtractor:inst1.A[0]
 A[0] => BitToBitXOR:inst13.A[0]
-A[1] => MagnitudeComparator4bits:inst1.A[1]
+A[1] => MagnitudeComparator4bits:inst4.A[1]
 A[1] => BitToBitAND:inst12.A[1]
-A[1] => SummerSubtractor:inst5.A[1]
+A[1] => SummerSubtractor:inst1.A[1]
 A[1] => BitToBitXOR:inst13.A[1]
-A[2] => MagnitudeComparator4bits:inst1.A[2]
+A[2] => MagnitudeComparator4bits:inst4.A[2]
 A[2] => BitToBitAND:inst12.A[2]
-A[2] => SummerSubtractor:inst5.A[2]
+A[2] => SummerSubtractor:inst1.A[2]
 A[2] => BitToBitXOR:inst13.A[2]
-A[3] => MagnitudeComparator4bits:inst1.A[3]
+A[3] => MagnitudeComparator4bits:inst4.A[3]
 A[3] => BitToBitAND:inst12.A[3]
-A[3] => SummerSubtractor:inst5.A[3]
+A[3] => SummerSubtractor:inst1.A[3]
 A[3] => BitToBitXOR:inst13.A[3]
-A[4] => MagnitudeComparator4bits:inst1.A[4]
+A[4] => MagnitudeComparator4bits:inst4.A[4]
 A[4] => BitToBitAND:inst12.A[4]
-A[4] => SummerSubtractor:inst5.A[4]
+A[4] => SummerSubtractor:inst1.A[4]
 A[4] => BitToBitXOR:inst13.A[4]
-B[0] => MagnitudeComparator4bits:inst1.B[0]
+B[0] => MagnitudeComparator4bits:inst4.B[0]
 B[0] => BitToBitAND:inst12.B[0]
 B[0] => BTwosComplement:inst2.B[0]
-B[0] => SummerSubtractor:inst5.B[0]
+B[0] => SummerSubtractor:inst1.B[0]
 B[0] => BitToBitXOR:inst13.B[0]
-B[1] => MagnitudeComparator4bits:inst1.B[1]
+B[1] => MagnitudeComparator4bits:inst4.B[1]
 B[1] => BitToBitAND:inst12.B[1]
 B[1] => BTwosComplement:inst2.B[1]
-B[1] => SummerSubtractor:inst5.B[1]
+B[1] => SummerSubtractor:inst1.B[1]
 B[1] => BitToBitXOR:inst13.B[1]
-B[2] => MagnitudeComparator4bits:inst1.B[2]
+B[2] => MagnitudeComparator4bits:inst4.B[2]
 B[2] => BitToBitAND:inst12.B[2]
 B[2] => BTwosComplement:inst2.B[2]
-B[2] => SummerSubtractor:inst5.B[2]
+B[2] => SummerSubtractor:inst1.B[2]
 B[2] => BitToBitXOR:inst13.B[2]
-B[3] => MagnitudeComparator4bits:inst1.B[3]
+B[3] => MagnitudeComparator4bits:inst4.B[3]
 B[3] => BitToBitAND:inst12.B[3]
 B[3] => BTwosComplement:inst2.B[3]
-B[3] => SummerSubtractor:inst5.B[3]
+B[3] => SummerSubtractor:inst1.B[3]
 B[3] => BitToBitXOR:inst13.B[3]
-B[4] => MagnitudeComparator4bits:inst1.B[4]
+B[4] => MagnitudeComparator4bits:inst4.B[4]
 B[4] => BitToBitAND:inst12.B[4]
 B[4] => BTwosComplement:inst2.B[4]
-B[4] => SummerSubtractor:inst5.B[4]
+B[4] => SummerSubtractor:inst1.B[4]
 B[4] => BitToBitXOR:inst13.B[4]
 S[0] => Selector:inst.S[0]
 S[1] => Selector:inst.S[1]
@@ -155,7 +158,7 @@ F[4] <= inst33.DB_MAX_OUTPUT_PORT_TYPE
 F[5] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|MagnitudeComparator4bits:inst1
+|Central|ALU:inst|MagnitudeComparator4bits:inst4
 AeqB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => inst24.IN0
 A[0] => inst.IN1
@@ -177,7 +180,6 @@ B[4] => inst1.IN1
 B[4] => inst4.IN0
 AltB <= inst28.DB_MAX_OUTPUT_PORT_TYPE
 AgtB <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-absAgtabsB <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Central|ALU:inst|Selector:inst
@@ -346,35 +348,33 @@ B[3] => inst1.IN1
 B[4] => inst.IN1
 
 
-|Central|ALU:inst|SummerSubtractor:inst5
+|Central|ALU:inst|SummerSubtractor:inst1
 S[0] <= TwosComplement6Bits:inst18.S[0]
 S[1] <= TwosComplement6Bits:inst18.S[1]
 S[2] <= TwosComplement6Bits:inst18.S[2]
 S[3] <= TwosComplement6Bits:inst18.S[3]
 S[4] <= TwosComplement6Bits:inst18.S[4]
 S[5] <= TwosComplement6Bits:inst18.S[5]
-SUBTRACTOR => inst16.IN0
+A[0] => TwosComplement6Bits:inst4.B[0]
+A[1] => TwosComplement6Bits:inst4.B[1]
+A[2] => TwosComplement6Bits:inst4.B[2]
+A[3] => TwosComplement6Bits:inst4.B[3]
+A[4] => TwosComplement6Bits:inst4.B[5]
+B[0] => TwosComplement6Bits:inst5.B[0]
+B[1] => TwosComplement6Bits:inst5.B[1]
+B[2] => TwosComplement6Bits:inst5.B[2]
+B[3] => TwosComplement6Bits:inst5.B[3]
+B[4] => TwosComplement6Bits:inst5.B[5]
+SUBTRACTOR => inst.IN1
 SUBTRACTOR => inst17.IN1
 SUBTRACTOR => inst12.IN0
 SUBTRACTOR => inst11.IN0
 SUBTRACTOR => inst10.IN0
 SUBTRACTOR => inst9.IN0
 SUBTRACTOR => FullAdder:inst01928374.Cinfa
-B[0] => TwosComplement5Bits:inst20.B[0]
-B[1] => TwosComplement5Bits:inst20.B[1]
-B[2] => TwosComplement5Bits:inst20.B[2]
-B[3] => TwosComplement5Bits:inst20.B[3]
-B[4] => TwosComplement5Bits:inst20.B[4]
-AgtB => inst.IN0
-AgtB => inst7.IN1
-A[0] => TwosComplement5Bits:inst19.B[0]
-A[1] => TwosComplement5Bits:inst19.B[1]
-A[2] => TwosComplement5Bits:inst19.B[2]
-A[3] => TwosComplement5Bits:inst19.B[3]
-A[4] => TwosComplement5Bits:inst19.B[4]
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18
 S[0] <= FullAdder:inst5.Sfa
 S[1] <= FullAdder:inst6.Sfa
 S[2] <= FullAdder:inst7.Sfa
@@ -400,7 +400,7 @@ B[5] => inst13.IN1
 B[5] => inst10.IN0
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18|FullAdder:inst8
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst8
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -411,7 +411,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18|FullAdder:inst7
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst7
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -422,7 +422,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18|FullAdder:inst6
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst6
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -433,7 +433,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18|FullAdder:inst5
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst5
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -444,7 +444,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18|FullAdder:inst9
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst9
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -455,29 +455,44 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst20
+|Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst16
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Afa => inst5.IN1
+Bfa => inst.IN1
+Bfa => inst5.IN0
+Cinfa => inst3.IN1
+Cinfa => inst4.IN0
+Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4
 S[0] <= FullAdder:inst5.Sfa
 S[1] <= FullAdder:inst6.Sfa
 S[2] <= FullAdder:inst7.Sfa
 S[3] <= FullAdder:inst8.Sfa
-S[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= FullAdder:inst9.Sfa
+S[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 B[0] => inst3.IN1
-B[0] => inst10.IN0
+B[0] => inst12.IN1
 B[1] => inst2.IN1
-B[1] => inst10.IN3
+B[1] => inst14.IN0
 B[2] => inst1.IN1
-B[2] => inst10.IN1
+B[2] => inst14.IN3
 B[3] => inst.IN1
-B[3] => inst10.IN2
-B[4] => inst.IN0
-B[4] => inst1.IN0
-B[4] => inst2.IN0
-B[4] => inst3.IN0
-B[4] => FullAdder:inst5.Cinfa
-B[4] => inst11.IN1
+B[3] => inst14.IN1
+B[4] => inst14.IN2
+B[4] => inst10.IN1
+B[5] => inst.IN0
+B[5] => inst1.IN0
+B[5] => inst2.IN0
+B[5] => inst3.IN0
+B[5] => FullAdder:inst5.Cinfa
+B[5] => inst13.IN1
+B[5] => inst10.IN0
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst20|FullAdder:inst8
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst8
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -488,7 +503,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst20|FullAdder:inst7
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst7
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -499,7 +514,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst20|FullAdder:inst6
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst6
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -510,7 +525,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst20|FullAdder:inst5
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst5
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -521,29 +536,44 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst9
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Afa => inst5.IN1
+Bfa => inst.IN1
+Bfa => inst5.IN0
+Cinfa => inst3.IN1
+Cinfa => inst4.IN0
+Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5
 S[0] <= FullAdder:inst5.Sfa
 S[1] <= FullAdder:inst6.Sfa
 S[2] <= FullAdder:inst7.Sfa
 S[3] <= FullAdder:inst8.Sfa
-S[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= FullAdder:inst9.Sfa
+S[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 B[0] => inst3.IN1
-B[0] => inst10.IN0
+B[0] => inst12.IN1
 B[1] => inst2.IN1
-B[1] => inst10.IN3
+B[1] => inst14.IN0
 B[2] => inst1.IN1
-B[2] => inst10.IN1
+B[2] => inst14.IN3
 B[3] => inst.IN1
-B[3] => inst10.IN2
-B[4] => inst.IN0
-B[4] => inst1.IN0
-B[4] => inst2.IN0
-B[4] => inst3.IN0
-B[4] => FullAdder:inst5.Cinfa
-B[4] => inst11.IN1
+B[3] => inst14.IN1
+B[4] => inst14.IN2
+B[4] => inst10.IN1
+B[5] => inst.IN0
+B[5] => inst1.IN0
+B[5] => inst2.IN0
+B[5] => inst3.IN0
+B[5] => FullAdder:inst5.Cinfa
+B[5] => inst13.IN1
+B[5] => inst10.IN0
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19|FullAdder:inst8
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst8
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -554,7 +584,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19|FullAdder:inst7
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst7
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -565,7 +595,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19|FullAdder:inst6
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst6
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -576,7 +606,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19|FullAdder:inst5
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst5
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -587,7 +617,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst14
+|Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst9
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -598,7 +628,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst3
+|Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst14
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -609,7 +639,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst2
+|Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst3
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -620,7 +650,7 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst1
+|Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst2
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -631,7 +661,18 @@ Cinfa => inst4.IN0
 Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst01928374
+|Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst1
+Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Afa => inst.IN0
+Afa => inst5.IN1
+Bfa => inst.IN1
+Bfa => inst5.IN0
+Cinfa => inst3.IN1
+Cinfa => inst4.IN0
+Coutfa <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst01928374
 Sfa <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Afa => inst.IN0
 Afa => inst5.IN1
@@ -1222,6 +1263,18 @@ I[4] => ins32.IN0
 I[4] => inst6.IN3
 I[4] => inst7.IN3
 I[4] => inst8.IN3
+
+
+|Central|ShouldBCDBeOff:inst28
+ShouldBCDBeOff <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst3.IN2
+S[0] => inst.IN0
+S[0] => inst5.IN2
+S[1] => inst3.IN1
+S[1] => inst1.IN0
+S[2] => inst2.IN0
+S[2] => inst4.IN0
+S[2] => inst5.IN0
 
 
 |Central|BinaryToDecimalBCDConversor:inst18
