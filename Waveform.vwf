@@ -1,16 +1,16 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main (1)/Arithmetic-Logic-Unit-main/output_files/Waveform.vwf" --testbench_file="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main (1)/Arithmetic-Logic-Unit-main/simulation/qsim/output_files/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main (1)/Arithmetic-Logic-Unit-main/output_files/Waveform.vwf" --testbench_file="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main (1)/Arithmetic-Logic-Unit-main/simulation/qsim/output_files/Waveform.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main (1)/Arithmetic-Logic-Unit-main/simulation/qsim/" Ula_pjct -c Ula_pjct</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main (1)/Arithmetic-Logic-Unit-main/simulation/qsim/" Ula_pjct -c Ula_pjct</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/output_files/Waveform.vwf" --testbench_file="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/simulation/qsim/output_files/Waveform.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/output_files/Waveform.vwf" --testbench_file="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/simulation/qsim/output_files/Waveform.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/simulation/qsim/" Ula_pjct -c Ula_pjct</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/simulation/qsim/" Ula_pjct -c Ula_pjct</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work Ula_pjct.vo
 vlog -work work output_files/Waveform.vwf.vt
-vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Tens7Segments5BitsDecoder_vlg_vec_tst
+vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ZeroTransformers_vlg_vec_tst
 vcd file -direction Ula_pjct.msim.vcd
-vcd add -internal Tens7Segments5BitsDecoder_vlg_vec_tst/*
-vcd add -internal Tens7Segments5BitsDecoder_vlg_vec_tst/i1/*
+vcd add -internal ZeroTransformers_vlg_vec_tst/*
+vcd add -internal ZeroTransformers_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -25,10 +25,10 @@ quit -f
 vlib work
 vlog -work work Ula_pjct.vo
 vlog -work work output_files/Waveform.vwf.vt
-vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Tens7Segments5BitsDecoder_vlg_vec_tst
+vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ZeroTransformers_vlg_vec_tst
 vcd file -direction Ula_pjct.msim.vcd
-vcd add -internal Tens7Segments5BitsDecoder_vlg_vec_tst/*
-vcd add -internal Tens7Segments5BitsDecoder_vlg_vec_tst/i1/*
+vcd add -internal ZeroTransformers_vlg_vec_tst/*
+vcd add -internal ZeroTransformers_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -48,9 +48,9 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -60,8 +60,7 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 */
 
 HEADER
@@ -76,87 +75,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("D")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 7;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("D[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "D";
-}
-
-SIGNAL("D[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "D";
-}
-
-SIGNAL("D[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "D";
-}
-
-SIGNAL("D[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "D";
-}
-
-SIGNAL("D[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "D";
-}
-
-SIGNAL("D[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "D";
-}
-
-SIGNAL("D[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "D";
-}
-
-SIGNAL("I")
+SIGNAL("A")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -166,179 +85,184 @@ SIGNAL("I")
 	PARENT = "";
 }
 
-SIGNAL("I[4]")
+SIGNAL("A[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "I";
+	PARENT = "A";
 }
 
-SIGNAL("I[3]")
+SIGNAL("A[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "I";
+	PARENT = "A";
 }
 
-SIGNAL("I[2]")
+SIGNAL("A[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "I";
+	PARENT = "A";
 }
 
-SIGNAL("I[1]")
+SIGNAL("A[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "I";
+	PARENT = "A";
 }
 
-SIGNAL("I[0]")
+SIGNAL("A[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "I";
+	PARENT = "A";
 }
 
-TRANSITION_LIST("D[6]")
+SIGNAL("B")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("B[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "B";
+}
+
+SIGNAL("B[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "B";
+}
+
+SIGNAL("B[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "B";
+}
+
+SIGNAL("B[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "B";
+}
+
+SIGNAL("B[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "B";
+}
+
+TRANSITION_LIST("A[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("D[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("D[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("D[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("D[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("D[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("D[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("I[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
+		LEVEL 0 FOR 150.0;
 		NODE
 		{
-			REPEAT = 3;
-			LEVEL 0 FOR 160.0;
+			REPEAT = 2;
 			LEVEL 1 FOR 160.0;
+			LEVEL 0 FOR 160.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
-TRANSITION_LIST("I[3]")
+TRANSITION_LIST("A[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 70.0;
 		NODE
 		{
-			REPEAT = 6;
-			LEVEL 0 FOR 80.0;
+			REPEAT = 5;
 			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 80.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
-TRANSITION_LIST("I[2]")
+TRANSITION_LIST("A[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
 		NODE
 		{
 			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
 			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 40.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("I[1]")
+TRANSITION_LIST("A[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
 		NODE
 		{
-			REPEAT = 25;
-			LEVEL 0 FOR 20.0;
+			REPEAT = 24;
 			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 20.0;
 		}
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("I[0]")
+TRANSITION_LIST("A[0]")
 {
 	NODE
 	{
@@ -346,17 +270,62 @@ TRANSITION_LIST("I[0]")
 		NODE
 		{
 			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
 			LEVEL 1 FOR 10.0;
+			LEVEL 0 FOR 10.0;
 		}
+	}
+}
+
+TRANSITION_LIST("B[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("B[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("B[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("B[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("B[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "I";
+	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Signed;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 	CHILDREN = 1, 2, 3, 4, 5;
@@ -364,9 +333,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I[4]";
+	CHANNEL = "A[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Signed;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -374,9 +343,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I[3]";
+	CHANNEL = "A[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Signed;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -384,9 +353,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I[2]";
+	CHANNEL = "A[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Signed;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -394,9 +363,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I[1]";
+	CHANNEL = "A[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Signed;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -404,9 +373,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I[0]";
+	CHANNEL = "A[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Signed;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -414,17 +383,17 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "D";
+	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 0;
-	CHILDREN = 7, 8, 9, 10, 11, 12, 13;
+	CHILDREN = 7, 8, 9, 10, 11;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "D[6]";
+	CHANNEL = "B[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -434,7 +403,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "D[5]";
+	CHANNEL = "B[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -444,7 +413,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "D[4]";
+	CHANNEL = "B[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -454,7 +423,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "D[3]";
+	CHANNEL = "B[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -464,30 +433,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "D[2]";
+	CHANNEL = "B[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
-	TREE_LEVEL = 1;
-	PARENT = 6;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "D[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 1;
-	PARENT = 6;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "D[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
 	PARENT = 6;
 }

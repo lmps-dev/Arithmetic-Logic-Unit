@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Ula_pjct
-Mon Nov  3 15:21:31 2025
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Mon Nov 03 17:44:56 2025
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -23,9 +23,9 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -35,21 +35,20 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov  3 15:21:31 2025       ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 03 17:44:56 2025       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Ula_pjct                                    ;
 ; Top-level Entity Name              ; Central                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 121                                         ;
-;     Total combinational functions  ; 121                                         ;
+; Total logic elements               ; 118                                         ;
+;     Total combinational functions  ; 118                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 75                                          ;
@@ -60,90 +59,90 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                           ; Setting            ; Default Value      ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; Central            ; Ula_pjct           ;
-; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
-; Use smart compilation                                            ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                      ; Off                ; Off                ;
-; Restructure Multiplexers                                         ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
-; Preserve fewer node names                                        ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
-; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                         ; Auto               ; Auto               ;
-; Safe State Machine                                               ; Off                ; Off                ;
-; Extract Verilog State Machines                                   ; On                 ; On                 ;
-; Extract VHDL State Machines                                      ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
-; Parallel Synthesis                                               ; On                 ; On                 ;
-; DSP Block Balancing                                              ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                               ; On                 ; On                 ;
-; Power-Up Don't Care                                              ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
-; Remove Duplicate Registers                                       ; On                 ; On                 ;
-; Ignore CARRY Buffers                                             ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
-; Ignore LCELL Buffers                                             ; Off                ; Off                ;
-; Ignore SOFT Buffers                                              ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
-; Optimization Technique                                           ; Balanced           ; Balanced           ;
-; Carry Chain Length                                               ; 70                 ; 70                 ;
-; Auto Carry Chains                                                ; On                 ; On                 ;
-; Auto Open-Drain Pins                                             ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
-; Auto ROM Replacement                                             ; On                 ; On                 ;
-; Auto RAM Replacement                                             ; On                 ; On                 ;
-; Auto DSP Block Replacement                                       ; On                 ; On                 ;
-; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
-; Strict RAM Replacement                                           ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
-; Auto RAM Block Balancing                                         ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
-; Auto Resource Sharing                                            ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
-; Timing-Driven Synthesis                                          ; On                 ; On                 ;
-; Report Parameter Settings                                        ; On                 ; On                 ;
-; Report Source Assignments                                        ; On                 ; On                 ;
-; Report Connectivity Checks                                       ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
-; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
-; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
-; HDL message level                                                ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
-; Clock MUX Protection                                             ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
-; Block Design Naming                                              ; Auto               ; Auto               ;
-; SDC constraint protection                                        ; Off                ; Off                ;
-; Synthesis Effort                                                 ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
-+------------------------------------------------------------------+--------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; Central            ; Ula_pjct           ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -151,7 +150,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
+; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -162,33 +161,34 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+---------+
-; ShouldBCDBeOff.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/ShouldBCDBeOff.bdf              ;         ;
-; BCD_a_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCD_a_Segment.bdf               ;         ;
-; BCDUNITY.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCDUNITY.bdf                    ;         ;
-; Selector.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/Selector.bdf                    ;         ;
-; SummerSubtractor.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/SummerSubtractor.bdf            ;         ;
-; TwosComplement6Bits.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/TwosComplement6Bits.bdf         ;         ;
-; MagnitudeComparator4bits.bdf     ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/MagnitudeComparator4bits.bdf    ;         ;
-; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/FullAdder.bdf                   ;         ;
-; BTwosComplement.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BTwosComplement.bdf             ;         ;
-; Tens7Segments5BitsDecoder.bdf    ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/Tens7Segments5BitsDecoder.bdf   ;         ;
-; BCD_b_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCD_b_Segment.bdf               ;         ;
-; BCD_c_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCD_c_Segment.bdf               ;         ;
-; BCD_d_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCD_d_Segment.bdf               ;         ;
-; BCD_e_Segment2.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCD_e_Segment2.bdf              ;         ;
-; BCD_f_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCD_f_Segment.bdf               ;         ;
-; BCD_g_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BCD_g_Segment.bdf               ;         ;
-; BinaryToDecimalBCDConversor.bdf  ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BinaryToDecimalBCDConversor.bdf ;         ;
-; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/ALU.bdf                         ;         ;
-; Central.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/Central.bdf                     ;         ;
-; BitToBitAND.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BitToBitAND.bdf                 ;         ;
-; BitToBitXOR.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Projects/Arithmetic-Logic-Unit/BitToBitXOR.bdf                 ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; ShouldBCDBeOff.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/ShouldBCDBeOff.bdf              ;         ;
+; BCD_a_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCD_a_Segment.bdf               ;         ;
+; BCDUNITY.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCDUNITY.bdf                    ;         ;
+; Selector.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/Selector.bdf                    ;         ;
+; SummerSubtractor.bdf             ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/SummerSubtractor.bdf            ;         ;
+; TwosComplement6Bits.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/TwosComplement6Bits.bdf         ;         ;
+; MagnitudeComparator4bits.bdf     ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/MagnitudeComparator4bits.bdf    ;         ;
+; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/FullAdder.bdf                   ;         ;
+; BTwosComplement.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BTwosComplement.bdf             ;         ;
+; Tens7Segments5BitsDecoder.bdf    ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/Tens7Segments5BitsDecoder.bdf   ;         ;
+; BCD_b_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCD_b_Segment.bdf               ;         ;
+; BCD_c_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCD_c_Segment.bdf               ;         ;
+; BCD_d_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCD_d_Segment.bdf               ;         ;
+; BCD_e_Segment2.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCD_e_Segment2.bdf              ;         ;
+; BCD_f_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCD_f_Segment.bdf               ;         ;
+; BCD_g_Segment.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BCD_g_Segment.bdf               ;         ;
+; BinaryToDecimalBCDConversor.bdf  ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BinaryToDecimalBCDConversor.bdf ;         ;
+; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/ALU.bdf                         ;         ;
+; Central.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/Central.bdf                     ;         ;
+; BitToBitAND.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BitToBitAND.bdf                 ;         ;
+; BitToBitXOR.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/BitToBitXOR.bdf                 ;         ;
+; ZeroTransformers.bdf             ; yes             ; User Block Diagram/Schematic File  ; D:/Users/phso/Downloads/Arithmetic-Logic-Unit-main/Arithmetic-Logic-Unit-main/ZeroTransformers.bdf            ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -196,16 +196,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 121        ;
+; Estimated Total logic elements              ; 118        ;
 ;                                             ;            ;
-; Total combinational functions               ; 121        ;
+; Total combinational functions               ; 118        ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 89         ;
-;     -- 3 input functions                    ; 25         ;
-;     -- <=2 input functions                  ; 7          ;
+;     -- 3 input functions                    ; 17         ;
+;     -- <=2 input functions                  ; 12         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 121        ;
+;     -- normal mode                          ; 118        ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
@@ -217,9 +217,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[0]~input ;
-; Maximum fan-out                             ; 23         ;
-; Total fan-out                               ; 576        ;
-; Average fan-out                             ; 2.13       ;
+; Maximum fan-out                             ; 22         ;
+; Total fan-out                               ; 562        ;
+; Average fan-out                             ; 2.10       ;
 +---------------------------------------------+------------+
 
 
@@ -228,36 +228,32 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Entity Name                 ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+-----------------------------+--------------+
-; |Central                                ; 121 (30)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |Central                                                                            ; Central                     ; work         ;
-;    |ALU:inst|                           ; 72 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst                                                                   ; ALU                         ; work         ;
-;       |BitToBitAND:inst10|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|BitToBitAND:inst10                                                ; BitToBitAND                 ; work         ;
-;       |BitToBitAND:inst14|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|BitToBitAND:inst14                                                ; BitToBitAND                 ; work         ;
-;       |MagnitudeComparator4bits:inst4|  ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|MagnitudeComparator4bits:inst4                                    ; MagnitudeComparator4bits    ; work         ;
-;       |Selector:inst|                   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|Selector:inst                                                     ; Selector                    ; work         ;
-;       |SummerSubtractor:inst1|          ; 41 (4)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1                                            ; SummerSubtractor            ; work         ;
-;          |FullAdder:inst01928374|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst01928374                     ; FullAdder                   ; work         ;
-;          |FullAdder:inst14|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst14                           ; FullAdder                   ; work         ;
-;          |FullAdder:inst16|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst16                           ; FullAdder                   ; work         ;
+; |Central                                ; 118 (28)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |Central                                                                            ; Central                     ; work         ;
+;    |ALU:inst|                           ; 63 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst                                                                   ; ALU                         ; work         ;
+;       |BTwosComplement:inst2|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|BTwosComplement:inst2                                             ; BTwosComplement             ; work         ;
+;          |FullAdder:inst7|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|BTwosComplement:inst2|FullAdder:inst7                             ; FullAdder                   ; work         ;
+;       |BitToBitAND:inst10|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|BitToBitAND:inst10                                                ; BitToBitAND                 ; work         ;
+;       |BitToBitAND:inst11|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|BitToBitAND:inst11                                                ; BitToBitAND                 ; work         ;
+;       |BitToBitAND:inst14|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|BitToBitAND:inst14                                                ; BitToBitAND                 ; work         ;
+;       |MagnitudeComparator4bits:inst4|  ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|MagnitudeComparator4bits:inst4                                    ; MagnitudeComparator4bits    ; work         ;
+;       |SummerSubtractor:inst1|          ; 29 (4)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1                                            ; SummerSubtractor            ; work         ;
+;          |FullAdder:inst01928374|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst01928374                     ; FullAdder                   ; work         ;
+;          |FullAdder:inst14|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst14                           ; FullAdder                   ; work         ;
 ;          |FullAdder:inst1|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst1                            ; FullAdder                   ; work         ;
-;          |FullAdder:inst2|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst2                            ; FullAdder                   ; work         ;
+;          |FullAdder:inst2|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst2                            ; FullAdder                   ; work         ;
 ;          |FullAdder:inst3|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|FullAdder:inst3                            ; FullAdder                   ; work         ;
-;          |TwosComplement6Bits:inst18|   ; 14 (7)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18                 ; TwosComplement6Bits         ; work         ;
+;          |TwosComplement6Bits:inst18|   ; 9 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18                 ; TwosComplement6Bits         ; work         ;
 ;             |FullAdder:inst5|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst5 ; FullAdder                   ; work         ;
-;             |FullAdder:inst6|           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst6 ; FullAdder                   ; work         ;
-;             |FullAdder:inst8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst8 ; FullAdder                   ; work         ;
-;             |FullAdder:inst9|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst9 ; FullAdder                   ; work         ;
-;          |TwosComplement6Bits:inst4|    ; 7 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4                  ; TwosComplement6Bits         ; work         ;
+;             |FullAdder:inst6|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18|FullAdder:inst6 ; FullAdder                   ; work         ;
+;          |TwosComplement6Bits:inst4|    ; 5 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4                  ; TwosComplement6Bits         ; work         ;
 ;             |FullAdder:inst6|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst6  ; FullAdder                   ; work         ;
 ;             |FullAdder:inst7|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst7  ; FullAdder                   ; work         ;
-;             |FullAdder:inst8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst4|FullAdder:inst8  ; FullAdder                   ; work         ;
-;          |TwosComplement6Bits:inst5|    ; 4 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5                  ; TwosComplement6Bits         ; work         ;
-;             |FullAdder:inst6|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst6  ; FullAdder                   ; work         ;
-;             |FullAdder:inst7|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst7  ; FullAdder                   ; work         ;
-;             |FullAdder:inst8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst8  ; FullAdder                   ; work         ;
-;    |BinaryToDecimalBCDConversor:inst18| ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18                                         ; BinaryToDecimalBCDConversor ; work         ;
+;          |TwosComplement6Bits:inst5|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5                  ; TwosComplement6Bits         ; work         ;
+;             |FullAdder:inst6|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst5|FullAdder:inst6  ; FullAdder                   ; work         ;
+;    |BinaryToDecimalBCDConversor:inst18| ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18                                         ; BinaryToDecimalBCDConversor ; work         ;
 ;       |BCDUNITY:inst1|                  ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18|BCDUNITY:inst1                          ; BCDUNITY                    ; work         ;
 ;          |BCD_e_Segment2:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18|BCDUNITY:inst1|BCD_e_Segment2:inst3     ; BCD_e_Segment2              ; work         ;
-;       |Tens7Segments5BitsDecoder:inst|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18|Tens7Segments5BitsDecoder:inst          ; Tens7Segments5BitsDecoder   ; work         ;
+;       |Tens7Segments5BitsDecoder:inst|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18|Tens7Segments5BitsDecoder:inst          ; Tens7Segments5BitsDecoder   ; work         ;
 ;    |BinaryToDecimalBCDConversor:inst5|  ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst5                                          ; BinaryToDecimalBCDConversor ; work         ;
 ;       |BCDUNITY:inst1|                  ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst5|BCDUNITY:inst1                           ; BCDUNITY                    ; work         ;
 ;          |BCD_a_Segment:inst|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst5|BCDUNITY:inst1|BCD_a_Segment:inst        ; BCD_a_Segment               ; work         ;
@@ -278,7 +274,9 @@ https://fpgasoftware.intel.com/eula.
 ;          |BCD_f_Segment:inst4|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst99|BCDUNITY:inst1|BCD_f_Segment:inst4      ; BCD_f_Segment               ; work         ;
 ;          |BCD_g_Segment:inst6|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst99|BCDUNITY:inst1|BCD_g_Segment:inst6      ; BCD_g_Segment               ; work         ;
 ;       |Tens7Segments5BitsDecoder:inst|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst99|Tens7Segments5BitsDecoder:inst          ; Tens7Segments5BitsDecoder   ; work         ;
-;    |ShouldBCDBeOff:inst28|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ShouldBCDBeOff:inst28                                                      ; ShouldBCDBeOff              ; work         ;
+;    |ShouldBCDBeOff:inst28|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ShouldBCDBeOff:inst28                                                      ; ShouldBCDBeOff              ; work         ;
+;    |ZeroTransformers:inst10|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ZeroTransformers:inst10                                                    ; ZeroTransformers            ; work         ;
+;    |ZeroTransformers:inst11|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Central|ZeroTransformers:inst11                                                    ; ZeroTransformers            ; work         ;
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -304,16 +302,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 75                          ;
-; cycloneiii_lcell_comb ; 125                         ;
-;     normal            ; 125                         ;
+; cycloneiii_lcell_comb ; 122                         ;
+;     normal            ; 122                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 25                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 17                          ;
 ;         4 data inputs ; 89                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 13.00                       ;
-; Average LUT depth     ; 9.01                        ;
+; Max LUT depth         ; 14.00                       ;
+; Average LUT depth     ; 9.76                        ;
 +-----------------------+-----------------------------+
 
 
@@ -331,8 +329,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Mon Nov  3 15:21:26 2025
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Mon Nov 03 17:44:46 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -383,6 +381,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file bittobi
     Info (12023): Found entity 1: BitToBitAND
 Info (12021): Found 1 design units, including 1 entities, in source file bittobitxor.bdf
     Info (12023): Found entity 1: BitToBitXOR
+Info (12021): Found 1 design units, including 1 entities, in source file zerotransformers.bdf
+    Info (12023): Found entity 1: ZeroTransformers
 Info (12127): Elaborating entity "Central" for the top level hierarchy
 Warning (275011): Block or symbol "GND" of instance "inst4" overlaps another block or symbol
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst"
@@ -396,6 +396,7 @@ Warning (275011): Block or symbol "GND" of instance "inst6" overlaps another blo
 Warning (275011): Block or symbol "GND" of instance "inst15" overlaps another block or symbol
 Info (12128): Elaborating entity "TwosComplement6Bits" for hierarchy "ALU:inst|SummerSubtractor:inst1|TwosComplement6Bits:inst18"
 Info (12128): Elaborating entity "BitToBitXOR" for hierarchy "ALU:inst|BitToBitXOR:inst13"
+Info (12128): Elaborating entity "ZeroTransformers" for hierarchy "ZeroTransformers:inst10"
 Info (12128): Elaborating entity "BinaryToDecimalBCDConversor" for hierarchy "BinaryToDecimalBCDConversor:inst99"
 Info (12128): Elaborating entity "Tens7Segments5BitsDecoder" for hierarchy "BinaryToDecimalBCDConversor:inst99|Tens7Segments5BitsDecoder:inst"
 Warning (275011): Block or symbol "AND3" of instance "inst7" overlaps another block or symbol
@@ -416,8 +417,6 @@ Warning (275008): Primitive "NOT" of instance "inst4" not used
 Info (12128): Elaborating entity "BCD_g_Segment" for hierarchy "BinaryToDecimalBCDConversor:inst99|BCDUNITY:inst1|BCD_g_Segment:inst6"
 Warning (275008): Primitive "NOT" of instance "inst54" not used
 Info (12128): Elaborating entity "ShouldBCDBeOff" for hierarchy "ShouldBCDBeOff:inst28"
-Warning (275011): Block or symbol "AND3" of instance "inst3" overlaps another block or symbol
-Warning (275011): Block or symbol "AND3" of instance "inst5" overlaps another block or symbol
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "AD[6]" is stuck at VCC
     Warning (13410): Pin "AD[2]" is stuck at GND
@@ -428,14 +427,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 196 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 193 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 62 output pins
-    Info (21061): Implemented 121 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Mon Nov  3 15:21:31 2025
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:12
+    Info (21061): Implemented 118 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Mon Nov 03 17:44:56 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:07
 
 

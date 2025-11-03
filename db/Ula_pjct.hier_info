@@ -1,33 +1,15 @@
 |Central
 STATUS <= ALU:inst.STATUS
-A[0] => ALU:inst.A[0]
-A[0] => BinaryToDecimalBCDConversor:inst99.I[0]
-A[0] => LA[0].DATAIN
-A[1] => ALU:inst.A[1]
-A[1] => BinaryToDecimalBCDConversor:inst99.I[1]
-A[1] => LA[1].DATAIN
-A[2] => ALU:inst.A[2]
-A[2] => BinaryToDecimalBCDConversor:inst99.I[2]
-A[2] => LA[2].DATAIN
-A[3] => ALU:inst.A[3]
-A[3] => BinaryToDecimalBCDConversor:inst99.I[3]
-A[3] => LA[3].DATAIN
-A[4] => ALU:inst.A[4]
-A[4] => LA[4].DATAIN
-B[0] => ALU:inst.B[0]
-B[0] => BinaryToDecimalBCDConversor:inst5.I[0]
-B[0] => LB[0].DATAIN
-B[1] => ALU:inst.B[1]
-B[1] => BinaryToDecimalBCDConversor:inst5.I[1]
-B[1] => LB[1].DATAIN
-B[2] => ALU:inst.B[2]
-B[2] => BinaryToDecimalBCDConversor:inst5.I[2]
-B[2] => LB[2].DATAIN
-B[3] => ALU:inst.B[3]
-B[3] => BinaryToDecimalBCDConversor:inst5.I[3]
-B[3] => LB[3].DATAIN
-B[4] => ALU:inst.B[4]
-B[4] => LB[4].DATAIN
+A[0] => ZeroTransformers:inst10.A[0]
+A[1] => ZeroTransformers:inst10.A[1]
+A[2] => ZeroTransformers:inst10.A[2]
+A[3] => ZeroTransformers:inst10.A[3]
+A[4] => ZeroTransformers:inst10.A[4]
+B[0] => ZeroTransformers:inst11.A[0]
+B[1] => ZeroTransformers:inst11.A[1]
+B[2] => ZeroTransformers:inst11.A[2]
+B[3] => ZeroTransformers:inst11.A[3]
+B[4] => ZeroTransformers:inst11.A[4]
 S[0] => ALU:inst.S[0]
 S[0] => ShouldBCDBeOff:inst28.S[0]
 S[0] => LS[0].DATAIN
@@ -85,16 +67,16 @@ FU[3] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
 FU[4] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
 FU[5] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
 FU[6] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-LA[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
-LA[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
-LA[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
-LA[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
-LA[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
-LB[0] <= B[0].DB_MAX_OUTPUT_PORT_TYPE
-LB[1] <= B[1].DB_MAX_OUTPUT_PORT_TYPE
-LB[2] <= B[2].DB_MAX_OUTPUT_PORT_TYPE
-LB[3] <= B[3].DB_MAX_OUTPUT_PORT_TYPE
-LB[4] <= B[4].DB_MAX_OUTPUT_PORT_TYPE
+LA[0] <= ZeroTransformers:inst10.B[0]
+LA[1] <= ZeroTransformers:inst10.B[1]
+LA[2] <= ZeroTransformers:inst10.B[2]
+LA[3] <= ZeroTransformers:inst10.B[3]
+LA[4] <= ZeroTransformers:inst10.B[4]
+LB[0] <= ZeroTransformers:inst11.B[0]
+LB[1] <= ZeroTransformers:inst11.B[1]
+LB[2] <= ZeroTransformers:inst11.B[2]
+LB[3] <= ZeroTransformers:inst11.B[3]
+LB[4] <= ZeroTransformers:inst11.B[4]
 LS[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
 LS[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
 LS[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -161,21 +143,23 @@ F[5] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
 |Central|ALU:inst|MagnitudeComparator4bits:inst4
 AeqB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 A[0] => inst24.IN0
-A[0] => inst.IN1
+A[0] => inst14.IN1
 A[1] => inst25.IN0
-A[1] => inst6.IN2
+A[1] => inst15.IN3
 A[2] => inst26.IN0
-A[2] => inst15.IN3
+A[2] => inst6.IN2
 A[3] => inst27.IN0
+A[3] => inst.IN1
 A[4] => inst1.IN0
 A[4] => inst11.IN0
 B[0] => inst24.IN1
-B[0] => inst18.IN0
+B[0] => inst21.IN0
 B[1] => inst25.IN1
-B[1] => inst19.IN0
+B[1] => inst20.IN0
 B[2] => inst26.IN1
-B[2] => inst20.IN0
+B[2] => inst19.IN0
 B[3] => inst27.IN1
+B[3] => inst18.IN0
 B[4] => inst1.IN1
 B[4] => inst4.IN0
 AltB <= inst28.DB_MAX_OUTPUT_PORT_TYPE
@@ -717,6 +701,40 @@ B[1] => inst3.IN1
 B[2] => inst2.IN1
 B[3] => inst1.IN1
 B[4] => inst.IN1
+
+
+|Central|ZeroTransformers:inst10
+B[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+B[4] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN2
+A[0] => B[0].DATAIN
+A[1] => inst.IN1
+A[1] => B[1].DATAIN
+A[2] => inst.IN3
+A[2] => B[2].DATAIN
+A[3] => inst.IN0
+A[3] => B[3].DATAIN
+A[4] => inst3.IN0
+
+
+|Central|ZeroTransformers:inst11
+B[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+B[4] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN2
+A[0] => B[0].DATAIN
+A[1] => inst.IN1
+A[1] => B[1].DATAIN
+A[2] => inst.IN3
+A[2] => B[2].DATAIN
+A[3] => inst.IN0
+A[3] => B[3].DATAIN
+A[4] => inst3.IN0
 
 
 |Central|BinaryToDecimalBCDConversor:inst99
@@ -1266,15 +1284,11 @@ I[4] => inst8.IN3
 
 
 |Central|ShouldBCDBeOff:inst28
-ShouldBCDBeOff <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-S[0] => inst3.IN2
+ShouldBCDBeOff <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst9.IN0
 S[0] => inst.IN0
-S[0] => inst5.IN2
-S[1] => inst3.IN1
 S[1] => inst1.IN0
 S[2] => inst2.IN0
-S[2] => inst4.IN0
-S[2] => inst5.IN0
 
 
 |Central|BinaryToDecimalBCDConversor:inst18
