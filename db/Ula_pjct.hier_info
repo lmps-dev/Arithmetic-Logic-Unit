@@ -680,9 +680,9 @@ B[4] => inst.IN1
 
 |Central|BinaryToDecimalBCDConversor:inst99
 D[0] <= Tens7Segments5BitsDecoder:inst.D[0]
-D[1] <= Tens7Segments5BitsDecoder:inst.D[3]
-D[2] <= Tens7Segments5BitsDecoder:inst.D[1]
-D[3] <= Tens7Segments5BitsDecoder:inst.D[2]
+D[1] <= Tens7Segments5BitsDecoder:inst.D[1]
+D[2] <= Tens7Segments5BitsDecoder:inst.D[2]
+D[3] <= Tens7Segments5BitsDecoder:inst.D[3]
 D[4] <= Tens7Segments5BitsDecoder:inst.D[4]
 D[5] <= Tens7Segments5BitsDecoder:inst.D[5]
 D[6] <= Tens7Segments5BitsDecoder:inst.D[6]
@@ -953,9 +953,9 @@ I[4] => inst8.IN3
 
 |Central|BinaryToDecimalBCDConversor:inst5
 D[0] <= Tens7Segments5BitsDecoder:inst.D[0]
-D[1] <= Tens7Segments5BitsDecoder:inst.D[3]
-D[2] <= Tens7Segments5BitsDecoder:inst.D[1]
-D[3] <= Tens7Segments5BitsDecoder:inst.D[2]
+D[1] <= Tens7Segments5BitsDecoder:inst.D[1]
+D[2] <= Tens7Segments5BitsDecoder:inst.D[2]
+D[3] <= Tens7Segments5BitsDecoder:inst.D[3]
 D[4] <= Tens7Segments5BitsDecoder:inst.D[4]
 D[5] <= Tens7Segments5BitsDecoder:inst.D[5]
 D[6] <= Tens7Segments5BitsDecoder:inst.D[6]
@@ -1226,9 +1226,9 @@ I[4] => inst8.IN3
 
 |Central|BinaryToDecimalBCDConversor:inst18
 D[0] <= Tens7Segments5BitsDecoder:inst.D[0]
-D[1] <= Tens7Segments5BitsDecoder:inst.D[3]
-D[2] <= Tens7Segments5BitsDecoder:inst.D[1]
-D[3] <= Tens7Segments5BitsDecoder:inst.D[2]
+D[1] <= Tens7Segments5BitsDecoder:inst.D[1]
+D[2] <= Tens7Segments5BitsDecoder:inst.D[2]
+D[3] <= Tens7Segments5BitsDecoder:inst.D[3]
 D[4] <= Tens7Segments5BitsDecoder:inst.D[4]
 D[5] <= Tens7Segments5BitsDecoder:inst.D[5]
 D[6] <= Tens7Segments5BitsDecoder:inst.D[6]

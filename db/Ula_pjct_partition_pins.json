@@ -16,7 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "AD[1]",
+					"name" : "AD[3]",
 					"strict" : false
 				},
 				{
@@ -60,7 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "BD[1]",
+					"name" : "BD[3]",
 					"strict" : false
 				},
 				{
@@ -136,7 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "FD[1]",
+					"name" : "FD[2]",
 					"strict" : false
 				},
 				{
