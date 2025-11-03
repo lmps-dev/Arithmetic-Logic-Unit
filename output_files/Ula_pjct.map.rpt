@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ula_pjct
-Fri Oct 31 22:27:55 2025
+Mon Nov  3 11:07:55 2025
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 31 22:27:55 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov  3 11:07:55 2025       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Ula_pjct                                    ;
 ; Top-level Entity Name           ; Central                                     ;
@@ -202,12 +202,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Estimate of Logic utilization (ALMs needed) ; 39         ;
 ;                                             ;            ;
-; Combinational ALUT usage for logic          ; 68         ;
-;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 9          ;
-;     -- 5 input functions                    ; 20         ;
+; Combinational ALUT usage for logic          ; 66         ;
+;     -- 7 input functions                    ; 1          ;
+;     -- 6 input functions                    ; 11         ;
+;     -- 5 input functions                    ; 17         ;
 ;     -- 4 input functions                    ; 26         ;
-;     -- <=3 input functions                  ; 13         ;
+;     -- <=3 input functions                  ; 11         ;
 ;                                             ;            ;
 ; Dedicated logic registers                   ; 0          ;
 ;                                             ;            ;
@@ -216,8 +216,8 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[0]~input ;
-; Maximum fan-out                             ; 21         ;
-; Total fan-out                               ; 425        ;
+; Maximum fan-out                             ; 19         ;
+; Total fan-out                               ; 422        ;
 ; Average fan-out                             ; 1.95       ;
 +---------------------------------------------+------------+
 
@@ -227,18 +227,18 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Entity Name                 ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-----------------------------+--------------+
-; |Central                                ; 68 (0)              ; 0 (0)                     ; 0                 ; 0          ; 75   ; 0            ; |Central                                                                            ; Central                     ; work         ;
-;    |ALU:inst|                           ; 40 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst                                                                   ; ALU                         ; work         ;
+; |Central                                ; 66 (0)              ; 0 (0)                     ; 0                 ; 0          ; 75   ; 0            ; |Central                                                                            ; Central                     ; work         ;
+;    |ALU:inst|                           ; 38 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst                                                                   ; ALU                         ; work         ;
 ;       |BTwosComplement:inst2|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|BTwosComplement:inst2                                             ; BTwosComplement             ; work         ;
 ;          |FullAdder:inst6|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|BTwosComplement:inst2|FullAdder:inst6                             ; FullAdder                   ; work         ;
 ;          |FullAdder:inst7|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|BTwosComplement:inst2|FullAdder:inst7                             ; FullAdder                   ; work         ;
-;       |MagnitudeComparator4bits:inst4|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|MagnitudeComparator4bits:inst4                                    ; MagnitudeComparator4bits    ; work         ;
-;       |Selector:inst|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|Selector:inst                                                     ; Selector                    ; work         ;
-;       |SummerSubtractor:inst5|          ; 19 (5)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5                                            ; SummerSubtractor            ; work         ;
+;       |MagnitudeComparator4bits:inst1|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|MagnitudeComparator4bits:inst1                                    ; MagnitudeComparator4bits    ; work         ;
+;       |Selector:inst|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|Selector:inst                                                     ; Selector                    ; work         ;
+;       |SummerSubtractor:inst5|          ; 20 (5)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5                                            ; SummerSubtractor            ; work         ;
 ;          |FullAdder:inst01928374|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst01928374                     ; FullAdder                   ; work         ;
 ;          |FullAdder:inst14|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst14                           ; FullAdder                   ; work         ;
-;          |FullAdder:inst1|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst1                            ; FullAdder                   ; work         ;
-;          |FullAdder:inst2|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst2                            ; FullAdder                   ; work         ;
+;          |FullAdder:inst1|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst1                            ; FullAdder                   ; work         ;
+;          |FullAdder:inst2|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst2                            ; FullAdder                   ; work         ;
 ;          |FullAdder:inst3|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|FullAdder:inst3                            ; FullAdder                   ; work         ;
 ;          |TwosComplement5Bits:inst19|   ; 4 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19                 ; TwosComplement5Bits         ; work         ;
 ;             |FullAdder:inst6|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19|FullAdder:inst6 ; FullAdder                   ; work         ;
@@ -246,7 +246,8 @@ https://fpgasoftware.intel.com/eula.
 ;             |FullAdder:inst8|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst19|FullAdder:inst8 ; FullAdder                   ; work         ;
 ;          |TwosComplement5Bits:inst20|   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst20                 ; TwosComplement5Bits         ; work         ;
 ;             |FullAdder:inst6|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement5Bits:inst20|FullAdder:inst6 ; FullAdder                   ; work         ;
-;          |TwosComplement6Bits:inst18|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18                 ; TwosComplement6Bits         ; work         ;
+;          |TwosComplement6Bits:inst18|   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18                 ; TwosComplement6Bits         ; work         ;
+;             |FullAdder:inst7|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|ALU:inst|SummerSubtractor:inst5|TwosComplement6Bits:inst18|FullAdder:inst7 ; FullAdder                   ; work         ;
 ;    |BinaryToDecimalBCDConversor:inst18| ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18                                         ; BinaryToDecimalBCDConversor ; work         ;
 ;       |BCDUNITY:inst1|                  ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18|BCDUNITY:inst1                          ; BCDUNITY                    ; work         ;
 ;          |BCD_a_Segment:inst|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Central|BinaryToDecimalBCDConversor:inst18|BCDUNITY:inst1|BCD_a_Segment:inst       ; BCD_a_Segment               ; work         ;
@@ -301,18 +302,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 70                          ;
-;     normal            ; 70                          ;
+; arriav_lcell_comb     ; 68                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 67                          ;
 ;         0 data inputs ; 2                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 11                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 8                           ;
 ;         4 data inputs ; 26                          ;
-;         5 data inputs ; 20                          ;
-;         6 data inputs ; 9                           ;
+;         5 data inputs ; 17                          ;
+;         6 data inputs ; 11                          ;
 ; boundary_port         ; 75                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.90                        ;
+; Average LUT depth     ; 3.81                        ;
 +-----------------------+-----------------------------+
 
 
@@ -331,7 +334,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Fri Oct 31 22:27:50 2025
+    Info: Processing started: Mon Nov  3 11:07:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -383,7 +386,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file bittobi
 Info (12127): Elaborating entity "Central" for the top level hierarchy
 Warning (275011): Block or symbol "GND" of instance "inst4" overlaps another block or symbol
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst"
-Info (12128): Elaborating entity "MagnitudeComparator4bits" for hierarchy "ALU:inst|MagnitudeComparator4bits:inst4"
+Info (12128): Elaborating entity "MagnitudeComparator4bits" for hierarchy "ALU:inst|MagnitudeComparator4bits:inst1"
 Info (12128): Elaborating entity "Selector" for hierarchy "ALU:inst|Selector:inst"
 Info (12128): Elaborating entity "BitToBitAND" for hierarchy "ALU:inst|BitToBitAND:inst14"
 Info (12128): Elaborating entity "BTwosComplement" for hierarchy "ALU:inst|BTwosComplement:inst2"
@@ -423,14 +426,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 141 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 62 output pins
-    Info (21061): Implemented 68 logic cells
+    Info (21061): Implemented 66 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
     Info: Peak virtual memory: 4867 megabytes
-    Info: Processing ended: Fri Oct 31 22:27:55 2025
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Processing ended: Mon Nov  3 11:07:55 2025
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:19
 
 

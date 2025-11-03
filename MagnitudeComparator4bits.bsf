@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 128 240)
+	(rect 16 16 168 240)
 	(text "MagnitudeComparator4bits" (rect 5 0 169 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 203 24 220)(font "Intel Clear" ))
 	(port
@@ -95,27 +95,34 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 176)(pt 16 176))
 	)
 	(port
-		(pt 112 32)
+		(pt 152 32)
 		(output)
 		(text "AeqB" (rect 0 0 31 19)(font "Intel Clear" (font_size 8)))
-		(text "AeqB" (rect 60 27 91 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 112 32)(pt 96 32))
+		(text "AeqB" (rect 100 27 131 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
 	)
 	(port
-		(pt 112 48)
+		(pt 152 48)
 		(output)
 		(text "AltB" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
-		(text "AltB" (rect 67 43 91 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 112 48)(pt 96 48))
+		(text "AltB" (rect 107 43 131 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
 	)
 	(port
-		(pt 112 64)
+		(pt 152 64)
 		(output)
 		(text "AgtB" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
-		(text "AgtB" (rect 63 59 91 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 112 64)(pt 96 64))
+		(text "AgtB" (rect 103 59 131 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 64)(pt 136 64))
+	)
+	(port
+		(pt 152 80)
+		(output)
+		(text "absAgtabsB" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
+		(text "absAgtabsB" (rect 61 75 131 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 80)(pt 136 80))
 	)
 	(drawing
-		(rectangle (rect 16 16 96 208))
+		(rectangle (rect 16 16 136 208))
 	)
 )

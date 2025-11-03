@@ -7,7 +7,7 @@ Note: if both Questa Intel FPGA Edition and ModelSim executables are available, 
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="C:/Projects/Arithmetic-Logic-Unit/Waveform.vwf" --testbench_file="C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source="C:/Projects/Arithmetic-Logic-Unit/Waveform1.vwf" --testbench_file="C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform1.vwf.vt"
 
 TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
 
@@ -28,13 +28,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Oct 31 22:22:40 2025
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source=C:/Projects/Arithmetic-Logic-Unit/Waveform.vwf --testbench_file=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform.vwf.vt
+    Info: Processing started: Mon Nov  3 11:13:09 2025
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Ula_pjct -c Ula_pjct --vector_source=C:/Projects/Arithmetic-Logic-Unit/Waveform1.vwf --testbench_file=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Waveform1.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-or source file when writing test bench files
+ctor source file when writing test bench files
 
- source file when writing test bench files
+or source file when writing test bench files
 
 Completed successfully. 
 
@@ -63,13 +63,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Oct 31 22:22:41 2025
+    Info: Processing started: Mon Nov  3 11:13:10 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/ Ula_pjct -c Ula_pjct
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Ula_pjct.vo in folder "C:/Projects/Arithmetic-Logic-Unit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4761 megabytes
-    Info: Processing ended: Fri Oct 31 22:22:41 2025
+    Info: Processing ended: Mon Nov  3 11:13:10 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -97,7 +97,7 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 22:22:44 on Oct 31,2025
+# Start time: 11:13:11 on Nov 03,2025
 # vlog -work work Ula_pjct.vo 
 
 # -- Compiling module Central
@@ -107,13 +107,14 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Top level modules:
 # 	Central
 
-# End time: 22:22:44 on Oct 31,2025, Elapsed time: 0:00:00
+# End time: 11:13:11 on Nov 03,2025, Elapsed time: 0:00:00
+
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 22:22:44 on Oct 31,2025
-# vlog -work work Waveform.vwf.vt 
+# Start time: 11:13:11 on Nov 03,2025
+# vlog -work work Waveform1.vwf.vt 
 
 # -- Compiling module Central_vlg_vec_tst
 
@@ -122,12 +123,12 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Top level modules:
 # 	Central_vlg_vec_tst
 
-# End time: 22:22:44 on Oct 31,2025, Elapsed time: 0:00:00
+# End time: 11:13:11 on Nov 03,2025, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Central_vlg_vec_tst 
-# Start time: 22:22:44 on Oct 31,2025
+# Start time: 11:13:11 on Nov 03,2025
 # Loading work.Central_vlg_vec_tst
 # Loading work.Central
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -136,23 +137,23 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # after#25
 
-# ** Note: $finish    : Waveform.vwf.vt(69)
+# ** Note: $finish    : Waveform1.vwf.vt(69)
 #    Time: 1 us  Iteration: 0  Instance: /Central_vlg_vec_tst
 
-# End time: 22:22:44 on Oct 31,2025, Elapsed time: 0:00:00
+# End time: 11:13:11 on Nov 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Projects/Arithmetic-Logic-Unit/Waveform.vwf...
+Reading C:/Projects/Arithmetic-Logic-Unit/Waveform1.vwf...
 
 Reading C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251031222245.sim.vwf
+Writing the resulting VWF to C:/Projects/Arithmetic-Logic-Unit/simulation/qsim/Ula_pjct_20251103111311.sim.vwf
 
 Finished VCD to VWF conversion.
 
