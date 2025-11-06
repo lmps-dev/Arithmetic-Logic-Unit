@@ -1,0 +1,10 @@
+Repositório do projeto: https://github.com/lmps-dev/Arithmetic-Logic-Unit
+Uma limpeza e organização nos waveforms do projeto foi feita para facilitar a avaliação de suas respectivas funções. Seguem os nomes dos waveforms abaixo:
+Waveform-a-and-b
+Waveform-a-maior-que-b
+Waveform-a-menor-que-b
+Waveform-a-xor-b
+Waveform-complemento-b
+Waveform-igualdade
+Waveform-soma
+WaveformSubtracao
