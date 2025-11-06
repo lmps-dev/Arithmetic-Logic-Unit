@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,12 +16,13 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 608 896 624 1064)
+	(rect 616 1160 632 1328)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[0]" (rect 0 114 17 134)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -35,11 +36,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 536 1064 608 1088))
+	(annotation_block (location)(rect 544 1328 616 1352))
 )
 (pin
 	(input)
-	(rect 624 896 640 1064)
+	(rect 632 1160 648 1328)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[1]" (rect 0 114 17 134)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -53,11 +54,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 552 1064 624 1088))
+	(annotation_block (location)(rect 560 1328 632 1352))
 )
 (pin
 	(input)
-	(rect 640 896 656 1064)
+	(rect 648 1160 664 1328)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[2]" (rect 0 109 17 129)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -71,11 +72,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 568 1064 640 1088))
+	(annotation_block (location)(rect 576 1328 648 1352))
 )
 (pin
 	(input)
-	(rect 656 896 672 1064)
+	(rect 664 1160 680 1328)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[3]" (rect 0 109 17 129)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -89,11 +90,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 584 1064 656 1088))
+	(annotation_block (location)(rect 592 1328 664 1352))
 )
 (pin
 	(input)
-	(rect 688 896 704 1064)
+	(rect 680 1160 696 1328)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[4]" (rect 0 114 17 134)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -107,11 +108,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 616 1064 688 1088))
+	(annotation_block (location)(rect 608 1328 680 1352))
 )
 (pin
 	(input)
-	(rect 504 896 520 1064)
+	(rect 496 1168 512 1336)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "A[0]" (rect 0 114 12 134)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -125,11 +126,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 432 1064 504 1088))
+	(annotation_block (location)(rect 424 1336 496 1360))
 )
 (pin
 	(input)
-	(rect 488 896 504 1064)
+	(rect 480 1168 496 1336)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "A[1]" (rect 1 113 18 133)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -143,11 +144,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 416 1064 488 1088))
+	(annotation_block (location)(rect 408 1336 480 1360))
 )
 (pin
 	(input)
-	(rect 472 896 488 1064)
+	(rect 464 1168 480 1336)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "A[2]" (rect 0 109 17 129)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -161,11 +162,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 400 1064 472 1088))
+	(annotation_block (location)(rect 392 1336 464 1360))
 )
 (pin
 	(input)
-	(rect 456 896 472 1064)
+	(rect 448 1168 464 1336)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "A[3]" (rect 1 108 18 128)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -179,11 +180,11 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 392 1064 456 1088))
+	(annotation_block (location)(rect 384 1336 448 1360))
 )
 (pin
 	(input)
-	(rect 424 896 440 1064)
+	(rect 432 1168 448 1336)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "A[4]" (rect 0 114 12 134)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -197,7 +198,7 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 360 1064 424 1088))
+	(annotation_block (location)(rect 368 1336 432 1360))
 )
 (pin
 	(input)
@@ -1107,6 +1108,164 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 )
+(symbol
+	(rect 408 1008 536 1104)
+	(text "ZeroTransformers" (rect 0 -15 19 91)(font "Intel Clear" (font_size 8))(vertical))
+	(text "inst8" (rect 107 66 124 88)(font "Intel Clear" )(vertical))
+	(port
+		(pt 32 96)
+		(input)
+		(text "A[4]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[4]" (rect 27 50 46 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 32 96)(pt 32 80))
+	)
+	(port
+		(pt 48 96)
+		(input)
+		(text "A[3]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[3]" (rect 43 50 62 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 48 96)(pt 48 80))
+	)
+	(port
+		(pt 64 96)
+		(input)
+		(text "A[2]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[2]" (rect 59 50 78 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 64 96)(pt 64 80))
+	)
+	(port
+		(pt 80 96)
+		(input)
+		(text "A[1]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[1]" (rect 75 50 94 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 80 96)(pt 80 80))
+	)
+	(port
+		(pt 96 96)
+		(input)
+		(text "A[0]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[0]" (rect 91 50 110 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 96 96)(pt 96 80))
+	)
+	(port
+		(pt 32 0)
+		(output)
+		(text "B[4]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[4]" (rect 27 21 46 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 32 0)(pt 32 16))
+	)
+	(port
+		(pt 48 0)
+		(output)
+		(text "B[3]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[3]" (rect 43 21 62 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 48 0)(pt 48 16))
+	)
+	(port
+		(pt 64 0)
+		(output)
+		(text "B[2]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[2]" (rect 59 21 78 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(output)
+		(text "B[1]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[1]" (rect 75 21 94 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
+	)
+	(port
+		(pt 96 0)
+		(output)
+		(text "B[0]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[0]" (rect 91 21 110 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 96 0)(pt 96 16))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 80))
+	)
+	(rotate90)
+)
+(symbol
+	(rect 592 1000 720 1096)
+	(text "ZeroTransformers" (rect 109 -15 128 91)(font "Intel Clear" (font_size 8))(vertical))
+	(text "inst7" (rect 4 66 21 88)(font "Intel Clear" )(vertical))
+	(port
+		(pt 96 96)
+		(input)
+		(text "A[4]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[4]" (rect 82 50 101 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 96 96)(pt 96 80))
+	)
+	(port
+		(pt 80 96)
+		(input)
+		(text "A[3]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[3]" (rect 66 50 85 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 80 96)(pt 80 80))
+	)
+	(port
+		(pt 64 96)
+		(input)
+		(text "A[2]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[2]" (rect 50 50 69 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 64 96)(pt 64 80))
+	)
+	(port
+		(pt 48 96)
+		(input)
+		(text "A[1]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[1]" (rect 34 50 53 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 48 96)(pt 48 80))
+	)
+	(port
+		(pt 32 96)
+		(input)
+		(text "A[0]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "A[0]" (rect 18 50 37 75)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 32 96)(pt 32 80))
+	)
+	(port
+		(pt 96 0)
+		(output)
+		(text "B[4]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[4]" (rect 82 21 101 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 96 0)(pt 96 16))
+	)
+	(port
+		(pt 80 0)
+		(output)
+		(text "B[3]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[3]" (rect 66 21 85 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
+	)
+	(port
+		(pt 64 0)
+		(output)
+		(text "B[2]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[2]" (rect 50 21 69 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 48 0)
+		(output)
+		(text "B[1]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[1]" (rect 34 21 53 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 48 0)(pt 48 16))
+	)
+	(port
+		(pt 32 0)
+		(output)
+		(text "B[0]" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "B[0]" (rect 18 21 37 46)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 32 0)(pt 32 16))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 80))
+	)
+	(flipx_rotate90)
+)
 (connector
 	(pt 472 248)
 	(pt 472 232)
@@ -1590,6 +1749,166 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1032 424)
 	(pt 1128 424)
+)
+(connector
+	(pt 616 896)
+	(pt 616 984)
+)
+(connector
+	(pt 632 896)
+	(pt 632 984)
+)
+(connector
+	(pt 648 896)
+	(pt 648 984)
+)
+(connector
+	(pt 664 896)
+	(pt 664 984)
+)
+(connector
+	(pt 696 896)
+	(pt 696 984)
+)
+(connector
+	(pt 512 896)
+	(pt 512 984)
+)
+(connector
+	(pt 496 896)
+	(pt 496 984)
+)
+(connector
+	(pt 480 896)
+	(pt 480 984)
+)
+(connector
+	(pt 464 896)
+	(pt 464 984)
+)
+(connector
+	(pt 432 896)
+	(pt 432 984)
+)
+(connector
+	(pt 688 1096)
+	(pt 688 1160)
+)
+(connector
+	(pt 672 1096)
+	(pt 672 1160)
+)
+(connector
+	(pt 656 1096)
+	(pt 656 1160)
+)
+(connector
+	(pt 640 1096)
+	(pt 640 1160)
+)
+(connector
+	(pt 624 1096)
+	(pt 624 1160)
+)
+(connector
+	(pt 440 1104)
+	(pt 440 1168)
+)
+(connector
+	(pt 456 1104)
+	(pt 456 1168)
+)
+(connector
+	(pt 472 1104)
+	(pt 472 1168)
+)
+(connector
+	(pt 488 1104)
+	(pt 488 1168)
+)
+(connector
+	(pt 504 1104)
+	(pt 504 1168)
+)
+(connector
+	(pt 440 1008)
+	(pt 440 984)
+)
+(connector
+	(pt 440 984)
+	(pt 432 984)
+)
+(connector
+	(pt 456 1008)
+	(pt 456 984)
+)
+(connector
+	(pt 456 984)
+	(pt 464 984)
+)
+(connector
+	(pt 472 1008)
+	(pt 472 984)
+)
+(connector
+	(pt 472 984)
+	(pt 480 984)
+)
+(connector
+	(pt 488 1008)
+	(pt 488 984)
+)
+(connector
+	(pt 488 984)
+	(pt 496 984)
+)
+(connector
+	(pt 504 1008)
+	(pt 504 984)
+)
+(connector
+	(pt 504 984)
+	(pt 512 984)
+)
+(connector
+	(pt 624 1000)
+	(pt 624 984)
+)
+(connector
+	(pt 624 984)
+	(pt 616 984)
+)
+(connector
+	(pt 640 1000)
+	(pt 640 984)
+)
+(connector
+	(pt 640 984)
+	(pt 632 984)
+)
+(connector
+	(pt 656 1000)
+	(pt 656 984)
+)
+(connector
+	(pt 656 984)
+	(pt 648 984)
+)
+(connector
+	(pt 672 1000)
+	(pt 672 984)
+)
+(connector
+	(pt 672 984)
+	(pt 664 984)
+)
+(connector
+	(pt 688 1000)
+	(pt 688 984)
+)
+(connector
+	(pt 688 984)
+	(pt 696 984)
 )
 (junction (pt 328 664))
 (junction (pt 504 664))

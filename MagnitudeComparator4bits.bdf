@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,12 +16,13 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 384 312 552 328)
+	(rect 376 312 544 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "A[0]" (rect 5 0 25 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,6 +35,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 328 376 352))
 )
 (pin
 	(input)
@@ -50,6 +52,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 384 376 408))
 )
 (pin
 	(input)
@@ -66,6 +69,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 440 376 464))
 )
 (pin
 	(input)
@@ -82,6 +86,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 312 496 376 520))
 )
 (pin
 	(input)
@@ -98,6 +103,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 344 376 368))
 )
 (pin
 	(input)
@@ -114,6 +120,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 400 376 424))
 )
 (pin
 	(input)
@@ -130,6 +137,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 456 376 480))
 )
 (pin
 	(input)
@@ -146,10 +154,11 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 512 376 536))
 )
 (pin
 	(input)
-	(rect 384 240 552 256)
+	(rect 376 248 544 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "A[4]" (rect 5 0 25 12)(font "Arial" ))
 	(pt 168 8)
@@ -162,6 +171,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 312 264 376 288))
 )
 (pin
 	(input)
@@ -178,6 +188,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 280 376 304))
 )
 (pin
 	(output)
@@ -1182,10 +1193,6 @@ refer to the applicable agreement for further details.
 	(pt 912 736)
 )
 (connector
-	(pt 552 248)
-	(pt 1128 248)
-)
-(connector
 	(pt 1128 336)
 	(pt 1192 336)
 )
@@ -1324,14 +1331,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1208 728)
 	(pt 1248 728)
-)
-(connector
-	(pt 1128 248)
-	(pt 1128 336)
-)
-(connector
-	(pt 1128 336)
-	(pt 1128 600)
 )
 (connector
 	(pt 1352 416)
@@ -1514,14 +1513,6 @@ refer to the applicable agreement for further details.
 	(pt 952 864)
 )
 (connector
-	(pt 552 320)
-	(pt 600 320)
-)
-(connector
-	(pt 600 320)
-	(pt 752 320)
-)
-(connector
 	(pt 816 328)
 	(pt 960 328)
 )
@@ -1568,6 +1559,26 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 848 496)
 	(pt 960 496)
+)
+(connector
+	(pt 600 320)
+	(pt 752 320)
+)
+(connector
+	(pt 544 320)
+	(pt 600 320)
+)
+(connector
+	(pt 1128 256)
+	(pt 544 256)
+)
+(connector
+	(pt 1128 256)
+	(pt 1128 336)
+)
+(connector
+	(pt 1128 336)
+	(pt 1128 600)
 )
 (junction (pt 848 704))
 (junction (pt 1128 336))
